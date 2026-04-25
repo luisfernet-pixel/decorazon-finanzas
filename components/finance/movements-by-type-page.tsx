@@ -153,18 +153,19 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
           </label>
           <label className="text-sm font-semibold text-slate-600">
             Categoria
-            <input
+            <select
               className="decorazon-input mt-1"
-              list={`${type}-categories`}
               value={form.category}
               onChange={(e) => setForm((prev) => ({ ...prev, category: e.target.value }))}
               required
-            />
-            <datalist id={`${type}-categories`}>
+            >
               {categories.map((category) => (
-                <option key={category} value={category} />
+                <option key={category} value={category}>
+                  {category}
+                </option>
               ))}
-            </datalist>
+              {categories.length === 0 && <option value="Otros">Otros</option>}
+            </select>
           </label>
           <label className="text-sm font-semibold text-slate-600">
             {isIncome ? "Cliente (opcional)" : "Proveedor (opcional)"}
@@ -308,4 +309,3 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
     </div>
   );
 }
-
