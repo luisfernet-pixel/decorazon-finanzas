@@ -96,22 +96,26 @@ function parseStoredState(raw: string): FinanceState {
 }
 
 export function FinanceProvider({ children }: PropsWithChildren) {
-  const [state, setState] = useState<FinanceState>(() => {
-    if (typeof window === "undefined") {
-      return initialFinanceState;
-    }
-
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? parseStoredState(raw) : initialFinanceState;
-    } catch {
-      return initialFinanceState;
-    }
-  });
+  const [state, setState] = useState<FinanceState>(initialFinanceState);
+  const [storageLoaded, setStorageLoaded] = useState(false);
 
   useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        setState(parseStoredState(raw));
+      }
+    } finally {
+      setStorageLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!storageLoaded) {
+      return;
+    }
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }, [state]);
+  }, [state, storageLoaded]);
 
   const value = useMemo<FinanceContextValue>(() => {
     const addMovement: FinanceContextValue["addMovement"] = (movement) => {
