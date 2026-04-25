@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #edf2f6;
+  --foreground: #0d2954;
+  --card: #ffffff;
+  --border: #d3dee8;
+  --brand-start: #0f7087;
+  --brand-end: #29a5ba;
+  --brand-strong: #0d5f7a;
+  --danger: #ee2463;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-nunito);
+  --font-heading: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-poppins), "Segoe UI", sans-serif;
+}
+
+.decorazon-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 24px rgba(13, 41, 84, 0.06);
+}
+
+.decorazon-input {
+  width: 100%;
+  border: 1px solid #c8d5e3;
+  border-radius: 0.85rem;
+  padding: 0.62rem 0.82rem;
+  background: #f9fbfd;
+  color: #0f325f;
+}
+
+.decorazon-input:focus {
+  outline: none;
+  border-color: #269db4;
+  box-shadow: 0 0 0 3px rgba(41, 165, 186, 0.16);
+}
+
+.decorazon-button {
+  border-radius: 9999px;
+  padding: 0.56rem 1rem;
+  font-weight: 700;
+  transition: 140ms ease-in-out;
+}
+
+.decorazon-button:hover {
+  transform: translateY(-1px);
 }

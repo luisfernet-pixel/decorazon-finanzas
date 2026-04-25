@@ -1,0 +1,4969 @@
+{
+    "gastos":  [
+                   {
+                       "date":  "2025-10-01",
+                       "month":  "octubre",
+                       "description":  "COMIDA CADILAC",
+                       "amount":  126,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-01",
+                       "month":  "octubre",
+                       "description":  "FARMACIA",
+                       "amount":  31,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-02",
+                       "month":  "octubre",
+                       "description":  "ALEXANDER",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-02",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  33,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-03",
+                       "month":  "octubre",
+                       "description":  "PAGO FINAL ESTRUCTURA LUISFER",
+                       "amount":  315,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-03",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  160,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-03",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  55,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-03",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-04",
+                       "month":  "octubre",
+                       "description":  "PAGO DE PRODUCTOS",
+                       "amount":  40.22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-04",
+                       "month":  "octubre",
+                       "description":  "JUAN DEL SUR",
+                       "amount":  55.9,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-04",
+                       "month":  "octubre",
+                       "description":  "VERDURA",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-07",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-07",
+                       "month":  "octubre",
+                       "description":  "ANDYS",
+                       "amount":  113.9,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-08",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  10,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-08",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  10,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-08",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-08",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  210,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-09",
+                       "month":  "octubre",
+                       "description":  "QR",
+                       "amount":  100.98,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-09",
+                       "month":  "octubre",
+                       "description":  "SUELDO SEPTIEMBRE",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-10",
+                       "month":  "octubre",
+                       "description":  "EL MERENGON",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "CECILIA TERAN",
+                       "amount":  1740,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "DIEGO VARGAS",
+                       "amount":  110,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "CASA BAR",
+                       "amount":  96,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "TAXI",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "CASA BAR",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "BEATRIZ",
+                       "amount":  42,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-12",
+                       "month":  "octubre",
+                       "description":  "REMEDIOS",
+                       "amount":  33.2,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-14",
+                       "month":  "octubre",
+                       "description":  "CAJERO",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-14",
+                       "month":  "octubre",
+                       "description":  "CONTADOR",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-14",
+                       "month":  "octubre",
+                       "description":  "IMPUESTOS",
+                       "amount":  194.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-16",
+                       "month":  "octubre",
+                       "description":  "AUTO IMPUESTOS",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-17",
+                       "month":  "octubre",
+                       "description":  "LECHE",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-18",
+                       "month":  "octubre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  51,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-18",
+                       "month":  "octubre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-20",
+                       "month":  "octubre",
+                       "description":  "MATERIALES",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-22",
+                       "month":  "octubre",
+                       "description":  "ADELANTO JAIME CARPINTERO",
+                       "amount":  3250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-22",
+                       "month":  "octubre",
+                       "description":  "CAJERO",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-22",
+                       "month":  "octubre",
+                       "description":  "CAJERO",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-22",
+                       "month":  "octubre",
+                       "description":  "CAJERO",
+                       "amount":  10,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-22",
+                       "month":  "octubre",
+                       "description":  "ALUVIL",
+                       "amount":  1080,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-23",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  65,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-23",
+                       "month":  "octubre",
+                       "description":  "MIL AMORES",
+                       "amount":  71,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-24",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  539,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-25",
+                       "month":  "octubre",
+                       "description":  "ADELANTO SUELDO",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-25",
+                       "month":  "octubre",
+                       "description":  "PUCHO",
+                       "amount":  21,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-25",
+                       "month":  "octubre",
+                       "description":  "PIRATAS",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-25",
+                       "month":  "octubre",
+                       "description":  "CUENTA MESERA",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-25",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  45,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-26",
+                       "month":  "octubre",
+                       "description":  "PIRATAS",
+                       "amount":  190,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-26",
+                       "month":  "octubre",
+                       "description":  "COMIDA",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-26",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  10,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-26",
+                       "month":  "octubre",
+                       "description":  "COMPRAS",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-26",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  33.7,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-27",
+                       "month":  "octubre",
+                       "description":  "NICOLAS",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-27",
+                       "month":  "octubre",
+                       "description":  "ADELANTO GATO",
+                       "amount":  3700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  10,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "CAJERO",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "PLANTAS",
+                       "amount":  540,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "PASTO SINTETICO",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "COMPRAS",
+                       "amount":  32,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  91,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-28",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-29",
+                       "month":  "octubre",
+                       "description":  "ADELANTO GATO STAND SANTA CRUZ",
+                       "amount":  3648,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "DEUDA",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "ACEITE MOTO",
+                       "amount":  380,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "CAMBIO DE ACEITE",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "VARIOS TIENDA",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "CREATINA",
+                       "amount":  480,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "MATERIALES",
+                       "amount":  120,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-30",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  39.3,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-31",
+                       "month":  "octubre",
+                       "description":  "SIN DETALLE",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-31",
+                       "month":  "octubre",
+                       "description":  "CANASTAS",
+                       "amount":  41,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-10-31",
+                       "month":  "octubre",
+                       "description":  "RETENCION IVA",
+                       "amount":  3.24,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-01",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-01",
+                       "month":  "noviembre",
+                       "description":  "AL GUSTO",
+                       "amount":  123,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-01",
+                       "month":  "noviembre",
+                       "description":  "PIZZA",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-01",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  95,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-02",
+                       "month":  "noviembre",
+                       "description":  "CERDO",
+                       "amount":  49,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-02",
+                       "month":  "noviembre",
+                       "description":  "TIENDA",
+                       "amount":  11,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-03",
+                       "month":  "noviembre",
+                       "description":  "MERCH CIES",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-04",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  45.2,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-04",
+                       "month":  "noviembre",
+                       "description":  "BEATRIZ",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-04",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO TRABAJOS GATO",
+                       "amount":  1700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-04",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-04",
+                       "month":  "noviembre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  55.84,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-05",
+                       "month":  "noviembre",
+                       "description":  "PAGO FINAL TRABAJO",
+                       "amount":  166,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-05",
+                       "month":  "noviembre",
+                       "description":  "ARBOLES SINTETICOS",
+                       "amount":  1180,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-06",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO TRABAJOS GATO",
+                       "amount":  5605,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-06",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO TINA",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-06",
+                       "month":  "noviembre",
+                       "description":  "PAGO FINAL GATO",
+                       "amount":  450,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-06",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  140.55,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-07",
+                       "month":  "noviembre",
+                       "description":  "LAVADO AUTO",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-07",
+                       "month":  "noviembre",
+                       "description":  "PINTURA DORADA",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-07",
+                       "month":  "noviembre",
+                       "description":  "MOUSE LUISFER",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-07",
+                       "month":  "noviembre",
+                       "description":  "NOVIEMBRE TINA",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  160,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  16,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  24,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "AL GUSTO",
+                       "amount":  104,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-08",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-09",
+                       "month":  "noviembre",
+                       "description":  "ANDYS",
+                       "amount":  180,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-09",
+                       "month":  "noviembre",
+                       "description":  "UNIVERSIDAD DIEGO",
+                       "amount":  2800,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-10",
+                       "month":  "noviembre",
+                       "description":  "PIZZA",
+                       "amount":  198,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-10",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-10",
+                       "month":  "noviembre",
+                       "description":  "SUELDO CONTADOR",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-10",
+                       "month":  "noviembre",
+                       "description":  "IMPUESTOS",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-11",
+                       "month":  "noviembre",
+                       "description":  "CECILIA TERAN",
+                       "amount":  1740,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-11",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-11",
+                       "month":  "noviembre",
+                       "description":  "QUESOS",
+                       "amount":  47,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-12",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  212,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-12",
+                       "month":  "noviembre",
+                       "description":  "REPUESTOS",
+                       "amount":  600,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-12",
+                       "month":  "noviembre",
+                       "description":  "PAGO CONFECCION",
+                       "amount":  225,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-13",
+                       "month":  "noviembre",
+                       "description":  "PAGO GATO",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-13",
+                       "month":  "noviembre",
+                       "description":  "ANDYS",
+                       "amount":  100.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-13",
+                       "month":  "noviembre",
+                       "description":  "DEVOLUCION",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-13",
+                       "month":  "noviembre",
+                       "description":  "ARREGLO MOTO",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-13",
+                       "month":  "noviembre",
+                       "description":  "FIPAZ GATO",
+                       "amount":  1400,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-14",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  37,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-15",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  51,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-15",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  90,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-16",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO POTOSI",
+                       "amount":  1300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-18",
+                       "month":  "noviembre",
+                       "description":  "DEVOLUCION",
+                       "amount":  425,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-18",
+                       "month":  "noviembre",
+                       "description":  "APIS",
+                       "amount":  57,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-19",
+                       "month":  "noviembre",
+                       "description":  "PAGO FINAL JAIME",
+                       "amount":  3250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-19",
+                       "month":  "noviembre",
+                       "description":  "MUEBLES",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-19",
+                       "month":  "noviembre",
+                       "description":  "PINTURA DORADA",
+                       "amount":  205,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-19",
+                       "month":  "noviembre",
+                       "description":  "CAJA CALACOTO",
+                       "amount":  627,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-19",
+                       "month":  "noviembre",
+                       "description":  "3 ROLLOS",
+                       "amount":  390,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-20",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-20",
+                       "month":  "noviembre",
+                       "description":  "MATERIALES",
+                       "amount":  215,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-20",
+                       "month":  "noviembre",
+                       "description":  "PAGOS QR",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-20",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  12,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "GENERACION",
+                       "amount":  34.72,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "PINTADO LA MASION",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "EL MERENGON",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "TAPIZ NAZUR",
+                       "amount":  448,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "MAYHEM",
+                       "amount":  120,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  18,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-21",
+                       "month":  "noviembre",
+                       "description":  "PAGO POTOSI GATO",
+                       "amount":  4305,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-23",
+                       "month":  "noviembre",
+                       "description":  "EMPANADAS",
+                       "amount":  42,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-24",
+                       "month":  "noviembre",
+                       "description":  "LETRAS DORADAS JAIME",
+                       "amount":  250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-24",
+                       "month":  "noviembre",
+                       "description":  "PINTURA BLANCA",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-24",
+                       "month":  "noviembre",
+                       "description":  "GASOLINA",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-25",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO GATO",
+                       "amount":  700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-26",
+                       "month":  "noviembre",
+                       "description":  "PINTEC",
+                       "amount":  74.8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-26",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO ESOFT",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-26",
+                       "month":  "noviembre",
+                       "description":  "ALUMINIO COM\u0027PUESTO",
+                       "amount":  1280,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-26",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-26",
+                       "month":  "noviembre",
+                       "description":  "MADERA TABLAS",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-27",
+                       "month":  "noviembre",
+                       "description":  "RODILLO",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-28",
+                       "month":  "noviembre",
+                       "description":  "MATERIALES",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-28",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  72,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-28",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "PINTURAS",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "PAGO GATO",
+                       "amount":  55,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO TUMI GATO",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "MATERIALES",
+                       "amount":  120,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "PRESTAMO NICOL",
+                       "amount":  1500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  1011.65,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "TRAGOS",
+                       "amount":  85,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "ADELANTO TINA",
+                       "amount":  400,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-29",
+                       "month":  "noviembre",
+                       "description":  "MARIA FERNANDA",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-30",
+                       "month":  "noviembre",
+                       "description":  "CAJERO",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-11-30",
+                       "month":  "noviembre",
+                       "description":  "RETENCION IVA",
+                       "amount":  5.49,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-01",
+                       "month":  "diciembre",
+                       "description":  "MATERIALES",
+                       "amount":  180,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-01",
+                       "month":  "diciembre",
+                       "description":  "INSCRIPCION",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-01",
+                       "month":  "diciembre",
+                       "description":  "PORKY",
+                       "amount":  58,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-02",
+                       "month":  "diciembre",
+                       "description":  "ALUMINIO COM\u0027PUESTO",
+                       "amount":  1180,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-02",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO POSADA DEL ALBA",
+                       "amount":  1200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-02",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO MIRADOR",
+                       "amount":  930,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-02",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO GREEN MAMSION",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-02",
+                       "month":  "diciembre",
+                       "description":  "ANDYS",
+                       "amount":  56.9,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-03",
+                       "month":  "diciembre",
+                       "description":  "MATERIALES",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-05",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  37,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-05",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO TINA",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-06",
+                       "month":  "diciembre",
+                       "description":  "DIEGO UNIVERSIDAD",
+                       "amount":  2760.41,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-06",
+                       "month":  "diciembre",
+                       "description":  "SUELDO DICIEMBRE",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-07",
+                       "month":  "diciembre",
+                       "description":  "CAJERO",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-07",
+                       "month":  "diciembre",
+                       "description":  "PAGO FINAL POSADA DEL ALBA",
+                       "amount":  1150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-08",
+                       "month":  "diciembre",
+                       "description":  "REMEDIOS",
+                       "amount":  57,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-08",
+                       "month":  "diciembre",
+                       "description":  "DEUDA FIN DE SEMANA",
+                       "amount":  125,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-09",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO JAIME TUMI",
+                       "amount":  14775,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-09",
+                       "month":  "diciembre",
+                       "description":  "COMIDA",
+                       "amount":  67,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-10",
+                       "month":  "diciembre",
+                       "description":  "SILICONA",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-10",
+                       "month":  "diciembre",
+                       "description":  "RODILLO",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-11",
+                       "month":  "diciembre",
+                       "description":  "RENO",
+                       "amount":  105,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-11",
+                       "month":  "diciembre",
+                       "description":  "VARIOS",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-11",
+                       "month":  "diciembre",
+                       "description":  "VARIOS",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-12",
+                       "month":  "diciembre",
+                       "description":  "CAJERO",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-12",
+                       "month":  "diciembre",
+                       "description":  "CAJERO PASAJES CBBA",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-13",
+                       "month":  "diciembre",
+                       "description":  "COMPRAS CBBA",
+                       "amount":  133,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-13",
+                       "month":  "diciembre",
+                       "description":  "PEDIDOS YA",
+                       "amount":  97,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-13",
+                       "month":  "diciembre",
+                       "description":  "PAGO GATO",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-14",
+                       "month":  "diciembre",
+                       "description":  "GASOLINA",
+                       "amount":  440,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-15",
+                       "month":  "diciembre",
+                       "description":  "CAJERO",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-15",
+                       "month":  "diciembre",
+                       "description":  "CECILIA TERAN",
+                       "amount":  1740,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-16",
+                       "month":  "diciembre",
+                       "description":  "MATERIALES",
+                       "amount":  320,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-16",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-17",
+                       "month":  "diciembre",
+                       "description":  "HAMBURGON",
+                       "amount":  117,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-17",
+                       "month":  "diciembre",
+                       "description":  "TAJETA DE CREDITO",
+                       "amount":  314,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-17",
+                       "month":  "diciembre",
+                       "description":  "MATERIALES",
+                       "amount":  215,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-17",
+                       "month":  "diciembre",
+                       "description":  "HILO ROJO",
+                       "amount":  510,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-18",
+                       "month":  "diciembre",
+                       "description":  "ADELANTO MUEBLES JAIME",
+                       "amount":  2100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-18",
+                       "month":  "diciembre",
+                       "description":  "COMPRA DE FACTURAS",
+                       "amount":  3545,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-18",
+                       "month":  "diciembre",
+                       "description":  "SUELDO CONTADOR",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-19",
+                       "month":  "diciembre",
+                       "description":  "PAGO COMPLEJO",
+                       "amount":  3500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-20",
+                       "month":  "diciembre",
+                       "description":  "SEGUNDO ADELANTO JAIME TUMI",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-20",
+                       "month":  "diciembre",
+                       "description":  "COMIDA",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-21",
+                       "month":  "diciembre",
+                       "description":  "GASOLINA",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-21",
+                       "month":  "diciembre",
+                       "description":  "NAVIDAD LUIS",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-22",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-22",
+                       "month":  "diciembre",
+                       "description":  "IMPUESTOS",
+                       "amount":  1525,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-22",
+                       "month":  "diciembre",
+                       "description":  "IMPUESTOS",
+                       "amount":  2523.17,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-22",
+                       "month":  "diciembre",
+                       "description":  "COMIDA",
+                       "amount":  67,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-23",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE",
+                       "amount":  135,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-23",
+                       "month":  "diciembre",
+                       "description":  "ALUMINIO COM\u0027PUESTO",
+                       "amount":  760,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-24",
+                       "month":  "diciembre",
+                       "description":  "PAGO TUMI GATO",
+                       "amount":  3500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-26",
+                       "month":  "diciembre",
+                       "description":  "PELUQUERIA LUIS",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-26",
+                       "month":  "diciembre",
+                       "description":  "CAJERO",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-26",
+                       "month":  "diciembre",
+                       "description":  "SOAT",
+                       "amount":  90,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-26",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE SCZ",
+                       "amount":  76,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-27",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE SCZ",
+                       "amount":  200.7,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-27",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE SCZ",
+                       "amount":  199.8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-28",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-28",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-28",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-28",
+                       "month":  "diciembre",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  94,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-28",
+                       "month":  "diciembre",
+                       "description":  "CHURRASCO",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-30",
+                       "month":  "diciembre",
+                       "description":  "QR SIN DETALLE SCZ",
+                       "amount":  23.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-30",
+                       "month":  "diciembre",
+                       "description":  "TAXI SCZÃ‡",
+                       "amount":  18,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-30",
+                       "month":  "diciembre",
+                       "description":  "GASTOS SCZ",
+                       "amount":  72,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-30",
+                       "month":  "diciembre",
+                       "description":  "GASTOS SCZ",
+                       "amount":  55,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-30",
+                       "month":  "diciembre",
+                       "description":  "GASTOS SCZ",
+                       "amount":  78,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-31",
+                       "month":  "diciembre",
+                       "description":  "TRECER ADELANTO JAIME TUMI",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-31",
+                       "month":  "diciembre",
+                       "description":  "PAGO FINAL GATO",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-31",
+                       "month":  "diciembre",
+                       "description":  "GASTOS SCZ",
+                       "amount":  301.6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2025-12-31",
+                       "month":  "diciembre",
+                       "description":  "RETENCION IVA",
+                       "amount":  8.32,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-01",
+                       "month":  "enero",
+                       "description":  "Pago de pr",
+                       "amount":  49.29,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-01",
+                       "month":  "enero",
+                       "description":  "Pago de pr",
+                       "amount":  15.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-01",
+                       "month":  "enero",
+                       "description":  "Pago de pr",
+                       "amount":  22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-01",
+                       "month":  "enero",
+                       "description":  "VARIOSSS",
+                       "amount":  72,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-01",
+                       "month":  "enero",
+                       "description":  "VARIOSSS",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-02",
+                       "month":  "enero",
+                       "description":  "AÃ‘o nuevo",
+                       "amount":  250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-02",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE",
+                       "amount":  82.38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-02",
+                       "month":  "enero",
+                       "description":  "Compra QR",
+                       "amount":  85.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-03",
+                       "month":  "enero",
+                       "description":  "Pago QR:04",
+                       "amount":  35.25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-03",
+                       "month":  "enero",
+                       "description":  "Pago de pr",
+                       "amount":  109.88,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-04",
+                       "month":  "enero",
+                       "description":  "LAVANDERIA",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-04",
+                       "month":  "enero",
+                       "description":  "YANINE CAS",
+                       "amount":  68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-04",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  21,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-05",
+                       "month":  "enero",
+                       "description":  "boletos",
+                       "amount":  1742,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-05",
+                       "month":  "enero",
+                       "description":  "Pago QR:02",
+                       "amount":  112.28,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-05",
+                       "month":  "enero",
+                       "description":  "Cuenta: 70",
+                       "amount":  73,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-06",
+                       "month":  "enero",
+                       "description":  "Qanchas Qo",
+                       "amount":  45,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-06",
+                       "month":  "enero",
+                       "description":  "JS DRINKS",
+                       "amount":  210,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-07",
+                       "month":  "enero",
+                       "description":  "Pago de pr",
+                       "amount":  47.2,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "4 PAGO TUM          JAIME",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "MARIA FERN",
+                       "amount":  54,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "2809224-SU",
+                       "amount":  235.56,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "Cuenta: 67",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-08",
+                       "month":  "enero",
+                       "description":  "gym Diego",
+                       "amount":  265,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-09",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  358,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-09",
+                       "month":  "enero",
+                       "description":  "VENTAS TER",
+                       "amount":  174,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-10",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-11",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  44,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-11",
+                       "month":  "enero",
+                       "description":  "Graxx",
+                       "amount":  115,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-12",
+                       "month":  "enero",
+                       "description":  "LAVANDERIA",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-12",
+                       "month":  "enero",
+                       "description":  "Pago de Im",
+                       "amount":  27.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-12",
+                       "month":  "enero",
+                       "description":  "Pago de Im",
+                       "amount":  84.45,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-12",
+                       "month":  "enero",
+                       "description":  "Impuestos",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "YANINE CAS",
+                       "amount":  78,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "AYR CATERI",
+                       "amount":  46,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  160,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-13",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  340.03,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-14",
+                       "month":  "enero",
+                       "description":  "cuotila",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-14",
+                       "month":  "enero",
+                       "description":  "AYR CATERI",
+                       "amount":  46,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-14",
+                       "month":  "enero",
+                       "description":  "Hiper",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-14",
+                       "month":  "enero",
+                       "description":  "servicio d",
+                       "amount":  700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-15",
+                       "month":  "enero",
+                       "description":  "Compras",
+                       "amount":  80,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-15",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  221.1,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-16",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-16",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE SCZ",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-16",
+                       "month":  "enero",
+                       "description":  "trabajo",
+                       "amount":  1367,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-17",
+                       "month":  "enero",
+                       "description":  "Armado de",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-17",
+                       "month":  "enero",
+                       "description":  "pizza lab",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-17",
+                       "month":  "enero",
+                       "description":  "Pago QR:04",
+                       "amount":  16,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-18",
+                       "month":  "enero",
+                       "description":  "Cuenta: 60",
+                       "amount":  75,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-18",
+                       "month":  "enero",
+                       "description":  "Pago QR:04",
+                       "amount":  126.8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-19",
+                       "month":  "enero",
+                       "description":  "0032729256",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-19",
+                       "month":  "enero",
+                       "description":  "Cuenta: 61",
+                       "amount":  78,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-19",
+                       "month":  "enero",
+                       "description":  "PAGO FINAL",
+                       "amount":  2100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-19",
+                       "month":  "enero",
+                       "description":  "CECILIA TERAN",
+                       "amount":  1760,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-19",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE",
+                       "amount":  68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "RESTAURANT",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE",
+                       "amount":  300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "SIN DETALLE",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "Parqueo no",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "SN15916 Co",
+                       "amount":  101,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "Cuenta: 72",
+                       "amount":  9,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-20",
+                       "month":  "enero",
+                       "description":  "Jordan hos",
+                       "amount":  320,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-21",
+                       "month":  "enero",
+                       "description":  "Cuenta: 69",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-22",
+                       "month":  "enero",
+                       "description":  "PAGO 4 TUM          JAIME",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-22",
+                       "month":  "enero",
+                       "description":  "PAGO DE MA",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-22",
+                       "month":  "enero",
+                       "description":  "Klefa",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-22",
+                       "month":  "enero",
+                       "description":  "Klefa",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-22",
+                       "month":  "enero",
+                       "description":  "Cuenta: 20",
+                       "amount":  17,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-23",
+                       "month":  "enero",
+                       "description":  "trabajo",
+                       "amount":  490,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-24",
+                       "month":  "enero",
+                       "description":  "Cuenta: 29",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-24",
+                       "month":  "enero",
+                       "description":  "Taller de",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-24",
+                       "month":  "enero",
+                       "description":  "Comida",
+                       "amount":  6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-24",
+                       "month":  "enero",
+                       "description":  "Cuenta: 17",
+                       "amount":  6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-25",
+                       "month":  "enero",
+                       "description":  "27273315 -",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-25",
+                       "month":  "enero",
+                       "description":  "beatriz",
+                       "amount":  53,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-25",
+                       "month":  "enero",
+                       "description":  "Pollo",
+                       "amount":  72,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-25",
+                       "month":  "enero",
+                       "description":  "Cuenta: 15",
+                       "amount":  118,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-25",
+                       "month":  "enero",
+                       "description":  "Cuenta: 73",
+                       "amount":  16,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "27338412 -",
+                       "amount":  90.01,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "Por mayor",
+                       "amount":  28,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "frutas y v",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "Cuenta: 29",
+                       "amount":  9,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "JOSUE SULC",
+                       "amount":  1640,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "COMPRA MAT",
+                       "amount":  45,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "0032729256",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-26",
+                       "month":  "enero",
+                       "description":  "Paleta",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-27",
+                       "month":  "enero",
+                       "description":  "Pr stamo",
+                       "amount":  1200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-28",
+                       "month":  "enero",
+                       "description":  "CUENTA: 13",
+                       "amount":  600,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-28",
+                       "month":  "enero",
+                       "description":  "Cuenta: 87",
+                       "amount":  39,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "PAGO FINAL",
+                       "amount":  1410,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "Tenis y mo",
+                       "amount":  85,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "Gotita",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "Pr stamo",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "Masajes",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-29",
+                       "month":  "enero",
+                       "description":  "Cuenta: 76",
+                       "amount":  23,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-30",
+                       "month":  "enero",
+                       "description":  "DIEGO UNIVERSIDAD 1",
+                       "amount":  4272.15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-30",
+                       "month":  "enero",
+                       "description":  "Cuenta: 20",
+                       "amount":  15.6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-30",
+                       "month":  "enero",
+                       "description":  "Gasolina",
+                       "amount":  400,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-30",
+                       "month":  "enero",
+                       "description":  "Varios",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-30",
+                       "month":  "enero",
+                       "description":  "Cuenta: 75",
+                       "amount":  75,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "Pago final",
+                       "amount":  1481,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "0023292991",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "Cuenta: 67",
+                       "amount":  7,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "Cuenta: 65",
+                       "amount":  160,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "Cuenta: 20",
+                       "amount":  16,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "Comida",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "RETENSION IVA",
+                       "amount":  5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-01-31",
+                       "month":  "enero",
+                       "description":  "FALLO DE ENERO",
+                       "amount":  231.21,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-02",
+                       "month":  "febrero",
+                       "description":  "Pago QR:01",
+                       "amount":  105.56,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-02",
+                       "month":  "febrero",
+                       "description":  "Luces",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-02",
+                       "month":  "febrero",
+                       "description":  "ADELANTO C",
+                       "amount":  1325,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-03",
+                       "month":  "febrero",
+                       "description":  "Lentes",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-04",
+                       "month":  "febrero",
+                       "description":  "(Sin infor",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-04",
+                       "month":  "febrero",
+                       "description":  "gym Diego",
+                       "amount":  265,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-04",
+                       "month":  "febrero",
+                       "description":  "Sesion llu",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-04",
+                       "month":  "febrero",
+                       "description":  "Pago de pr",
+                       "amount":  59,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-04",
+                       "month":  "febrero",
+                       "description":  "Chifa",
+                       "amount":  67,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-05",
+                       "month":  "febrero",
+                       "description":  "Campeonato",
+                       "amount":  415,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-06",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 22",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-06",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 20",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-07",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 67",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-07",
+                       "month":  "febrero",
+                       "description":  "Pollos",
+                       "amount":  98,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-08",
+                       "month":  "febrero",
+                       "description":  "VENTA DE P",
+                       "amount":  44,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-08",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 27",
+                       "amount":  16.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-08",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 73",
+                       "amount":  35,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-09",
+                       "month":  "febrero",
+                       "description":  "Reflector",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-09",
+                       "month":  "febrero",
+                       "description":  "Adwlanto e",
+                       "amount":  1800,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-09",
+                       "month":  "febrero",
+                       "description":  "Pago de Im",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-09",
+                       "month":  "febrero",
+                       "description":  "Casilleros",
+                       "amount":  3000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-11",
+                       "month":  "febrero",
+                       "description":  "pago",
+                       "amount":  3250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-11",
+                       "month":  "febrero",
+                       "description":  "Pago total",
+                       "amount":  2900,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-11",
+                       "month":  "febrero",
+                       "description":  "CUADROS TU",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-11",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 22",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-12",
+                       "month":  "febrero",
+                       "description":  "SUNNY SLIM",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-12",
+                       "month":  "febrero",
+                       "description":  "Impuestos",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-13",
+                       "month":  "febrero",
+                       "description":  "0023292991",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-13",
+                       "month":  "febrero",
+                       "description":  "BARBERIA D",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-13",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 30",
+                       "amount":  68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-14",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 78",
+                       "amount":  22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-14",
+                       "month":  "febrero",
+                       "description":  "Carneavale",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-14",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 20",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-14",
+                       "month":  "febrero",
+                       "description":  "Varios",
+                       "amount":  48,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-15",
+                       "month":  "febrero",
+                       "description":  "SalteÃ‘as",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-15",
+                       "month":  "febrero",
+                       "description":  "beatriz",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-15",
+                       "month":  "febrero",
+                       "description":  "LOS 3 HERM",
+                       "amount":  23,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-15",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 76",
+                       "amount":  15.1,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-15",
+                       "month":  "febrero",
+                       "description":  "Servicios",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-16",
+                       "month":  "febrero",
+                       "description":  "0023292991",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-16",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 20",
+                       "amount":  5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-16",
+                       "month":  "febrero",
+                       "description":  "pago...",
+                       "amount":  66,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-17",
+                       "month":  "febrero",
+                       "description":  "Materiales",
+                       "amount":  220,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-17",
+                       "month":  "febrero",
+                       "description":  "29225945 -",
+                       "amount":  38.1,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-18",
+                       "month":  "febrero",
+                       "description":  "0023292991",
+                       "amount":  250,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-18",
+                       "month":  "febrero",
+                       "description":  "Curso",
+                       "amount":  57,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-18",
+                       "month":  "febrero",
+                       "description":  "DEB.CTA.P/MOVIL",
+                       "amount":  358,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-19",
+                       "month":  "febrero",
+                       "description":  "Pago VEH 3",
+                       "amount":  702,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-19",
+                       "month":  "febrero",
+                       "description":  "Retiro Efectivo Caja",
+                       "amount":  949,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-20",
+                       "month":  "febrero",
+                       "description":  "Luka PK76M",
+                       "amount":  5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-20",
+                       "month":  "febrero",
+                       "description":  "Retiro Efectivo Caja",
+                       "amount":  331,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-20",
+                       "month":  "febrero",
+                       "description":  "Sueldo feb",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-21",
+                       "month":  "febrero",
+                       "description":  "Casillero",
+                       "amount":  700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-21",
+                       "month":  "febrero",
+                       "description":  "DEB.CTA.P/T.CRD.,MOV",
+                       "amount":  1022.34,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-21",
+                       "month":  "febrero",
+                       "description":  "Materiales",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-23",
+                       "month":  "febrero",
+                       "description":  "0023292991",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-24",
+                       "month":  "febrero",
+                       "description":  "Pasaje suc",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-24",
+                       "month":  "febrero",
+                       "description":  "Enero y fe",
+                       "amount":  900,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-24",
+                       "month":  "febrero",
+                       "description":  "230",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-25",
+                       "month":  "febrero",
+                       "description":  "Adelanto c",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-25",
+                       "month":  "febrero",
+                       "description":  "ADELANTO E",
+                       "amount":  1500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 17",
+                       "amount":  37,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-08",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 70",
+                       "amount":  6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 25",
+                       "amount":  12,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "Trupan",
+                       "amount":  275,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "Transferen",
+                       "amount":  600,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "BALAY comp",
+                       "amount":  22.6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-26",
+                       "month":  "febrero",
+                       "description":  "DEB.CTA.P/MOVIL",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Vuelta",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Consulta",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "0032729256",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "KC LTDA",
+                       "amount":  95,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 76",
+                       "amount":  17,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Pago final",
+                       "amount":  1300,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "PAGO FINAL",
+                       "amount":  590,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "PAGO 2 ESM",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Debito Cta. por pago de Seguro",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-27",
+                       "month":  "febrero",
+                       "description":  "Cuenta: 75",
+                       "amount":  85,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-28",
+                       "month":  "febrero",
+                       "description":  "Finde",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-28",
+                       "month":  "febrero",
+                       "description":  "RetenciÃ³n IVA",
+                       "amount":  6.63,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-02-28",
+                       "month":  "febrero",
+                       "description":  "Fallo de febrero",
+                       "amount":  17.11,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "remedios",
+                       "amount":  72.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  34,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "Complejo",
+                       "amount":  220,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "churrasco",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-01",
+                       "month":  "marzo",
+                       "description":  "Paprika",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-02",
+                       "month":  "marzo",
+                       "description":  "ADELANTO 2",
+                       "amount":  1900,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-02",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  27,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-02",
+                       "month":  "marzo",
+                       "description":  "Pollosssss",
+                       "amount":  85,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-03",
+                       "month":  "marzo",
+                       "description":  "VENTAS",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-03",
+                       "month":  "marzo",
+                       "description":  "Mesada",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-03",
+                       "month":  "marzo",
+                       "description":  "VENTA DE C",
+                       "amount":  39,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-03",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  63,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-03",
+                       "month":  "marzo",
+                       "description":  "contratos",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-04",
+                       "month":  "marzo",
+                       "description":  "PAGO 3 CAM",
+                       "amount":  1440,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-04",
+                       "month":  "marzo",
+                       "description":  "ESMERILADO",
+                       "amount":  1225,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-04",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 71",
+                       "amount":  48,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-04",
+                       "month":  "marzo",
+                       "description":  "PAGO FINAL",
+                       "amount":  960,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-05",
+                       "month":  "marzo",
+                       "description":  "30688712 -",
+                       "amount":  82.89,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-05",
+                       "month":  "marzo",
+                       "description":  "30689471 -",
+                       "amount":  300.07,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-05",
+                       "month":  "marzo",
+                       "description":  "0023292991",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-05",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  81,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-06",
+                       "month":  "marzo",
+                       "description":  "VENTAS",
+                       "amount":  28,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-06",
+                       "month":  "marzo",
+                       "description":  "Cena",
+                       "amount":  118,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 60",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 67",
+                       "amount":  37,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 20",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 64",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "Adelanto s",
+                       "amount":  500,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "30932006 -",
+                       "amount":  61,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-07",
+                       "month":  "marzo",
+                       "description":  "LOS 3 HERM",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-08",
+                       "month":  "marzo",
+                       "description":  "VENTA DE C",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-08",
+                       "month":  "marzo",
+                       "description":  "Dolce Boli",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-08",
+                       "month":  "marzo",
+                       "description":  "ANDYS ACHU",
+                       "amount":  73,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-08",
+                       "month":  "marzo",
+                       "description":  "pago U die",
+                       "amount":  4272.15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-09",
+                       "month":  "marzo",
+                       "description":  "0023292991",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-09",
+                       "month":  "marzo",
+                       "description":  "gym diego",
+                       "amount":  265,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-09",
+                       "month":  "marzo",
+                       "description":  "31136177 -",
+                       "amount":  18.7,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-10",
+                       "month":  "marzo",
+                       "description":  "31182835 -",
+                       "amount":  16.94,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-10",
+                       "month":  "marzo",
+                       "description":  "LUCIA MODA",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-10",
+                       "month":  "marzo",
+                       "description":  "Tecito",
+                       "amount":  66,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-10",
+                       "month":  "marzo",
+                       "description":  "VENTA DE C",
+                       "amount":  73,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-11",
+                       "month":  "marzo",
+                       "description":  "beatriz",
+                       "amount":  29,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-11",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 60",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-11",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  34,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "marzo",
+                       "amount":  1760,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "Mensualida",
+                       "amount":  450,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 60",
+                       "amount":  23,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "Pago de Im",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "VENTA ANDY",
+                       "amount":  280.3,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-12",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 26",
+                       "amount":  67,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-13",
+                       "month":  "marzo",
+                       "description":  "Contador",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-13",
+                       "month":  "marzo",
+                       "description":  "ESMERILADO",
+                       "amount":  1230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-14",
+                       "month":  "marzo",
+                       "description":  "Auto",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-14",
+                       "month":  "marzo",
+                       "description":  "31584081 -",
+                       "amount":  23,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-14",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 14",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-14",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 20",
+                       "amount":  55,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-14",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 67",
+                       "amount":  29,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 62",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 20",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 32",
+                       "amount":  75,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 51",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 76",
+                       "amount":  28,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 75",
+                       "amount":  40,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "TAXI Y COM",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 17",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 62",
+                       "amount":  22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-15",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 13",
+                       "amount":  136,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-16",
+                       "month":  "marzo",
+                       "description":  "31802433 -",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-16",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-16",
+                       "month":  "marzo",
+                       "description":  "Chifa",
+                       "amount":  67,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-17",
+                       "month":  "marzo",
+                       "description":  "0023292991",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-17",
+                       "month":  "marzo",
+                       "description":  "LUIS FERNA",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-17",
+                       "month":  "marzo",
+                       "description":  "DIEGO VARG",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-18",
+                       "month":  "marzo",
+                       "description":  "Pago QR:01",
+                       "amount":  64.68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-18",
+                       "month":  "marzo",
+                       "description":  "LOS 3 HERM",
+                       "amount":  22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-18",
+                       "month":  "marzo",
+                       "description":  "BUSPACK",
+                       "amount":  130,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-18",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  66,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-18",
+                       "month":  "marzo",
+                       "description":  "Sin defini",
+                       "amount":  22,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-19",
+                       "month":  "marzo",
+                       "description":  "Taxi",
+                       "amount":  37,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-19",
+                       "month":  "marzo",
+                       "description":  "32094964 -",
+                       "amount":  23.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-19",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 27",
+                       "amount":  140,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-19",
+                       "month":  "marzo",
+                       "description":  "D a del pa",
+                       "amount":  240,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-19",
+                       "month":  "marzo",
+                       "description":  "LA PAZ- BO",
+                       "amount":  20,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-20",
+                       "month":  "marzo",
+                       "description":  "trmite FAM",
+                       "amount":  6180,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-20",
+                       "month":  "marzo",
+                       "description":  "ADELANTO B",
+                       "amount":  420,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-20",
+                       "month":  "marzo",
+                       "description":  "32222417 -",
+                       "amount":  45.6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-20",
+                       "month":  "marzo",
+                       "description":  "SillpichsL",
+                       "amount":  92,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "SalteÃ‘as",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "SN5060 Cob",
+                       "amount":  14,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "TEMPO Y BA",
+                       "amount":  630,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "32312556 -",
+                       "amount":  98,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 78",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 35",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-21",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 22",
+                       "amount":  90,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-22",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 85",
+                       "amount":  18,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-22",
+                       "month":  "marzo",
+                       "description":  "Porky",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "32508271 -",
+                       "amount":  42.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "Materiales",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "DEB.CTA.P/T.CRD.,MOV",
+                       "amount":  671,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "Luka WNREV",
+                       "amount":  5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "(Sin infor",
+                       "amount":  205,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-24",
+                       "month":  "marzo",
+                       "description":  "VENTA MEDI",
+                       "amount":  25.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-26",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 75",
+                       "amount":  25,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-26",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 60",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-26",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 67",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-27",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 29",
+                       "amount":  16,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-27",
+                       "month":  "marzo",
+                       "description":  "0023292991",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-27",
+                       "month":  "marzo",
+                       "description":  "Moto",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-27",
+                       "month":  "marzo",
+                       "description":  "0032729256",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-27",
+                       "month":  "marzo",
+                       "description":  "Debito Cta. por pago de Seguro",
+                       "amount":  19,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-28",
+                       "month":  "marzo",
+                       "description":  "VENTA DE C",
+                       "amount":  33,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 78",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 20",
+                       "amount":  157,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 15",
+                       "amount":  8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-29",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 71",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-30",
+                       "month":  "marzo",
+                       "description":  "NUBA 21",
+                       "amount":  142,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-30",
+                       "month":  "marzo",
+                       "description":  "Materiales",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-30",
+                       "month":  "marzo",
+                       "description":  "Pago a Vid",
+                       "amount":  430,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-30",
+                       "month":  "marzo",
+                       "description":  "LOS 3 HERM",
+                       "amount":  21,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-30",
+                       "month":  "marzo",
+                       "description":  "Cuenta: 22",
+                       "amount":  75,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-31",
+                       "month":  "marzo",
+                       "description":  "Mecnico",
+                       "amount":  195,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-03-31",
+                       "month":  "marzo",
+                       "description":  "RetenciÃ³n IVA",
+                       "amount":  5.99,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-23",
+                       "month":  "abril",
+                       "description":  "FARMACORP",
+                       "amount":  65.82,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "33431510 -",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "BODEGA PIL",
+                       "amount":  34,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "Materiales",
+                       "amount":  70,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "Bugias",
+                       "amount":  100,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "BL TRANS C",
+                       "amount":  85,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "MAMA GRAND",
+                       "amount":  95,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-02",
+                       "month":  "abril",
+                       "description":  "33493090 -",
+                       "amount":  36,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-03",
+                       "month":  "abril",
+                       "description":  "SalteÃ‘as",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-03",
+                       "month":  "abril",
+                       "description":  "Chifa",
+                       "amount":  68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-03",
+                       "month":  "abril",
+                       "description":  "VENTAS DE",
+                       "amount":  32,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-04",
+                       "month":  "abril",
+                       "description":  "Cuenta: 60",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-04",
+                       "month":  "abril",
+                       "description":  "Wara Shede",
+                       "amount":  95,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-04",
+                       "month":  "abril",
+                       "description":  "Cuenta: 70",
+                       "amount":  168,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-05",
+                       "month":  "abril",
+                       "description":  "Cuenta: 27",
+                       "amount":  170,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-05",
+                       "month":  "abril",
+                       "description":  "inscripci",
+                       "amount":  333,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-05",
+                       "month":  "abril",
+                       "description":  "Wara Shede",
+                       "amount":  139,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "0023292991",
+                       "amount":  120,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "33862628 -",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "Mayhem",
+                       "amount":  2700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "Adhesivo n",
+                       "amount":  75,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "Cuenta: 77",
+                       "amount":  38,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "Compra en",
+                       "amount":  255,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "Pago a Vid",
+                       "amount":  170,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-06",
+                       "month":  "abril",
+                       "description":  "cineeee",
+                       "amount":  68,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-07",
+                       "month":  "abril",
+                       "description":  "Generaci n",
+                       "amount":  41.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-07",
+                       "month":  "abril",
+                       "description":  "Cuenta: 73",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "Limpiador",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "34039392 -",
+                       "amount":  335,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "Consulta m",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "DON CHOCLO",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "34117686 -",
+                       "amount":  58,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "06-2026-04",
+                       "amount":  49.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-08",
+                       "month":  "abril",
+                       "description":  "pago U Die",
+                       "amount":  4272.15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Tornillo",
+                       "amount":  43,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Vinagre",
+                       "amount":  69,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Pago de Im",
+                       "amount":  611.15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Cobro de f",
+                       "amount":  690,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Mensual de",
+                       "amount":  350,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-09",
+                       "month":  "abril",
+                       "description":  "Api",
+                       "amount":  57,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Laboratori",
+                       "amount":  880,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Cuenta: 35",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Cuenta: 20",
+                       "amount":  18,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Cuenta: 17",
+                       "amount":  18,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Cuenta: 17",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "JUAN DEL S",
+                       "amount":  41.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Cuenta: 29",
+                       "amount":  32.8,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-10",
+                       "month":  "abril",
+                       "description":  "Pago total",
+                       "amount":  1330,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-11",
+                       "month":  "abril",
+                       "description":  "Cuenta: 35",
+                       "amount":  30,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-11",
+                       "month":  "abril",
+                       "description":  "Cuenta: 15",
+                       "amount":  305,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-11",
+                       "month":  "abril",
+                       "description":  "Cuenta: 20",
+                       "amount":  230,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-11",
+                       "month":  "abril",
+                       "description":  "Compra QR",
+                       "amount":  87,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-11",
+                       "month":  "abril",
+                       "description":  "BALAY comp",
+                       "amount":  9.6,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-12",
+                       "month":  "abril",
+                       "description":  "Cuenta: 17",
+                       "amount":  24,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-12",
+                       "month":  "abril",
+                       "description":  "Cuenta: 75",
+                       "amount":  26,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-13",
+                       "month":  "abril",
+                       "description":  "trmite FAM",
+                       "amount":  26289,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "Devoluci n",
+                       "amount":  1000,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "LUZ",
+                       "amount":  508.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "AGUA",
+                       "amount":  223.5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "GAS",
+                       "amount":  8.98,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "INTERNET",
+                       "amount":  189,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "Devoluci n",
+                       "amount":  200,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-14",
+                       "month":  "abril",
+                       "description":  "Cuenta: 29",
+                       "amount":  23,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "Pagos",
+                       "amount":  360,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "ADRIAN QUI",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "Centro mamografia",
+                       "amount":  450,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "yango",
+                       "amount":  15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "0023292991",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-15",
+                       "month":  "abril",
+                       "description":  "VENTA ovulos",
+                       "amount":  190,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-16",
+                       "month":  "abril",
+                       "description":  "Cuenta: 78",
+                       "amount":  34,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-16",
+                       "month":  "abril",
+                       "description":  "Cecilia Teran",
+                       "amount":  1760,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-17",
+                       "month":  "abril",
+                       "description":  "Luka ON746",
+                       "amount":  5,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-17",
+                       "month":  "abril",
+                       "description":  "Consulta ginecologo",
+                       "amount":  150,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-17",
+                       "month":  "abril",
+                       "description":  "pago Gato",
+                       "amount":  700,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-17",
+                       "month":  "abril",
+                       "description":  "Chifa",
+                       "amount":  81,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-18",
+                       "month":  "abril",
+                       "description":  "35070293 -",
+                       "amount":  19.15,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-18",
+                       "month":  "abril",
+                       "description":  "Helados",
+                       "amount":  41,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-18",
+                       "month":  "abril",
+                       "description":  "Lavado aut",
+                       "amount":  60,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-18",
+                       "month":  "abril",
+                       "description":  "Cuenta: 22",
+                       "amount":  50,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-19",
+                       "month":  "abril",
+                       "description":  "Cuenta: 17",
+                       "amount":  32,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-19",
+                       "month":  "abril",
+                       "description":  "Cuenta: 78",
+                       "amount":  45.4,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-19",
+                       "month":  "abril",
+                       "description":  "Cuenta: 32",
+                       "amount":  48,
+                       "notes":  ""
+                   },
+                   {
+                       "date":  "2026-04-23",
+                       "month":  "abril",
+                       "description":  "FARMACORP",
+                       "amount":  65.82,
+                       "notes":  ""
+                   }
+               ],
+    "ingresos":  [
+                     {
+                         "date":  "2025-10-01",
+                         "month":  "octubre",
+                         "description":  "A LA FECHA",
+                         "amount":  13775,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-02",
+                         "month":  "octubre",
+                         "description":  "FACTURAS",
+                         "amount":  800,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-10",
+                         "month":  "octubre",
+                         "description":  "PLACA MOON",
+                         "amount":  150,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-20",
+                         "month":  "octubre",
+                         "description":  "ADELANTO TRABAJO TUMI",
+                         "amount":  10250,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-22",
+                         "month":  "octubre",
+                         "description":  "SEÃ‘ALETICAS EL REFUGIO",
+                         "amount":  3500,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-22",
+                         "month":  "octubre",
+                         "description":  "ADELANTO EL REFUJIO",
+                         "amount":  545,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-27",
+                         "month":  "octubre",
+                         "description":  "ADELANTO TRABAJO",
+                         "amount":  13484,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-10-31",
+                         "month":  "octubre",
+                         "description":  "INTERESES",
+                         "amount":  44.29,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-02",
+                         "month":  "noviembre",
+                         "description":  "SIN DETALLE",
+                         "amount":  350,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-05",
+                         "month":  "noviembre",
+                         "description":  "ADELANTO TRABAJOS",
+                         "amount":  18319.14,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-06",
+                         "month":  "noviembre",
+                         "description":  "PAGO FINAL MITRU",
+                         "amount":  545,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-14",
+                         "month":  "noviembre",
+                         "description":  "SIN DETALLE",
+                         "amount":  297.05,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-17",
+                         "month":  "noviembre",
+                         "description":  "PAGO FINAL POTOSI",
+                         "amount":  12537,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-18",
+                         "month":  "noviembre",
+                         "description":  "CORTES TRUPAN",
+                         "amount":  700,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-23",
+                         "month":  "noviembre",
+                         "description":  "DISEÃ‘O DE MARCA JIMY",
+                         "amount":  1200,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-23",
+                         "month":  "noviembre",
+                         "description":  "NAZUR",
+                         "amount":  4500,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-24",
+                         "month":  "noviembre",
+                         "description":  "LETRERO FISIODEP",
+                         "amount":  2000,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-26",
+                         "month":  "noviembre",
+                         "description":  "TABLAS ESOFT",
+                         "amount":  1325,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-26",
+                         "month":  "noviembre",
+                         "description":  "PAGO DE SEÃ‘ALETICAS",
+                         "amount":  7738,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-27",
+                         "month":  "noviembre",
+                         "description":  "PAGO FEIPOBOL",
+                         "amount":  12400,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-28",
+                         "month":  "noviembre",
+                         "description":  "PAGO JIMY LLANOS",
+                         "amount":  3500,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-30",
+                         "month":  "noviembre",
+                         "description":  "DEVOLUCION MARIA FERNANDA",
+                         "amount":  300,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-11-30",
+                         "month":  "noviembre",
+                         "description":  "INTERESES",
+                         "amount":  42.24,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-01",
+                         "month":  "diciembre",
+                         "description":  "DEVOLUCION",
+                         "amount":  2300,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-06",
+                         "month":  "diciembre",
+                         "description":  "ADELANTO TUMI",
+                         "amount":  15000,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-06",
+                         "month":  "diciembre",
+                         "description":  "SIN DETALLE",
+                         "amount":  200.29,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-06",
+                         "month":  "diciembre",
+                         "description":  "PAGO POSADA DEL ALBA",
+                         "amount":  2545,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-09",
+                         "month":  "diciembre",
+                         "description":  "PAGO ESOFT",
+                         "amount":  1325,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-09",
+                         "month":  "diciembre",
+                         "description":  "PAGO SEÃ‘ALETICAS MITRU",
+                         "amount":  3469,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-09",
+                         "month":  "diciembre",
+                         "description":  "PAGO EL REFUGIO",
+                         "amount":  891,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-12",
+                         "month":  "diciembre",
+                         "description":  "SEÃ‘ALETICAS EL REFUGIO",
+                         "amount":  220,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-12",
+                         "month":  "diciembre",
+                         "description":  "PASAJES CBBA",
+                         "amount":  150,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-12",
+                         "month":  "diciembre",
+                         "description":  "PASAJES CBBA",
+                         "amount":  150,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-12",
+                         "month":  "diciembre",
+                         "description":  "PASAJES CBBA",
+                         "amount":  150,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-15",
+                         "month":  "diciembre",
+                         "description":  "SEGUNDO PAGP GREEN MANSION",
+                         "amount":  2700,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-17",
+                         "month":  "diciembre",
+                         "description":  "ADELANTO TUMI",
+                         "amount":  10789,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-23",
+                         "month":  "diciembre",
+                         "description":  "PAGO CORTE DE TRUPAN",
+                         "amount":  950,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-24",
+                         "month":  "diciembre",
+                         "description":  "SEÃ‘ALETICAS EL REFUGIO",
+                         "amount":  220,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-27",
+                         "month":  "diciembre",
+                         "description":  "SIN DETALLE",
+                         "amount":  182.38,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-12-31",
+                         "month":  "diciembre",
+                         "description":  "INTERESES",
+                         "amount":  63.97,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-05",
+                         "month":  "enero",
+                         "description":  "PASAJE TINA",
+                         "amount":  400,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-08",
+                         "month":  "enero",
+                         "description":  "DEVOLUCION NICOLAS",
+                         "amount":  591,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-19",
+                         "month":  "enero",
+                         "description":  "PAGO NAZUR GREEN MANSION",
+                         "amount":  1500,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-20",
+                         "month":  "enero",
+                         "description":  "PAGO NAZUR GREEN MANSION",
+                         "amount":  1200,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-25",
+                         "month":  "enero",
+                         "description":  "PAGO NILS TUMI",
+                         "amount":  50000,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-30",
+                         "month":  "enero",
+                         "description":  "PAGO FINAL FISIODEP",
+                         "amount":  4455,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-01-31",
+                         "month":  "enero",
+                         "description":  "INTERESES",
+                         "amount":  38.4,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-02-02",
+                         "month":  "febrero",
+                         "description":  "PAGO",
+                         "amount":  263.54,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-02-13",
+                         "month":  "febrero",
+                         "description":  "CORTES TRUPAN",
+                         "amount":  450,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-02-23",
+                         "month":  "febrero",
+                         "description":  "PAGO FINAL",
+                         "amount":  7738,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-02-28",
+                         "month":  "febrero",
+                         "description":  "INTERESES",
+                         "amount":  51.01,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-03-08",
+                         "month":  "marzo",
+                         "description":  "SIN DETALLE",
+                         "amount":  331.88,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2025-03-14",
+                         "month":  "marzo",
+                         "description":  "GIMNASIO TUMI",
+                         "amount":  36006,
+                         "notes":  "Por cobrar: 22500"
+                     },
+                     {
+                         "date":  "2026-03-20",
+                         "month":  "marzo",
+                         "description":  "TEMPO",
+                         "amount":  1725.5,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-03-26",
+                         "month":  "marzo",
+                         "description":  "DEVOLUCION LUIS",
+                         "amount":  5105,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-03-31",
+                         "month":  "marzo",
+                         "description":  "INTERESES",
+                         "amount":  46.08,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-03-31",
+                         "month":  "marzo",
+                         "description":  "FALLO MARZO",
+                         "amount":  49.5,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-04-05",
+                         "month":  "abril",
+                         "description":  "TEMPO",
+                         "amount":  7500,
+                         "notes":  "Por cobrar: 3200"
+                     },
+                     {
+                         "date":  "2026-04-06",
+                         "month":  "abril",
+                         "description":  "RAQUETA",
+                         "amount":  1000,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-04-14",
+                         "month":  "abril",
+                         "description":  "DEVOLUCION CUENTAS TINA",
+                         "amount":  1930,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-04-14",
+                         "month":  "abril",
+                         "description":  "DEVOLUCION TRAMITES LUIS",
+                         "amount":  20000,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-04-14",
+                         "month":  "abril",
+                         "description":  "DEVOLUCION TRAMITES LUIS",
+                         "amount":  1900,
+                         "notes":  ""
+                     },
+                     {
+                         "date":  "2026-04-17",
+                         "month":  "abril",
+                         "description":  "CABINA TEMATEUR",
+                         "amount":  800,
+                         "notes":  ""
+                     }
+                 ]
+}
