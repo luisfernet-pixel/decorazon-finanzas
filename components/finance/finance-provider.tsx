@@ -17,6 +17,7 @@ import {
   todayIso,
 } from "@/lib/finance/utils";
 import { FinanceState, Movement, Payable, Receivable } from "@/lib/finance/types";
+import { defaultSettings } from "@/lib/finance/defaults";
 
 const STORAGE_KEY = "decorazon-finanzas-v1";
 
@@ -55,11 +56,33 @@ function createId(prefix: string): string {
 
 function parseStoredState(raw: string): FinanceState {
   const parsed = JSON.parse(raw) as Partial<FinanceState>;
+
+  const normalizedIncome = Array.from(
+    new Set([
+      ...((parsed.settings?.incomeCategories ?? [])
+        .map((item) => item.trim())
+        .filter(Boolean) as string[]),
+      ...defaultSettings.incomeCategories,
+    ]),
+  );
+
+  const normalizedExpense = Array.from(
+    new Set([
+      ...((parsed.settings?.expenseCategories ?? [])
+        .map((item) => item.trim())
+        .filter(Boolean) as string[]),
+      ...defaultSettings.expenseCategories,
+    ]),
+  );
+
   const state: FinanceState = {
     movements: parsed.movements ?? [],
     receivables: parsed.receivables ?? [],
     payables: parsed.payables ?? [],
-    settings: parsed.settings ?? initialFinanceState.settings,
+    settings: {
+      incomeCategories: normalizedIncome,
+      expenseCategories: normalizedExpense,
+    },
   };
 
   if (state.movements.length === 0 || isLegacyDemoState(state)) {
@@ -320,11 +343,15 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ...prev.settings,
           incomeCategories:
             type === "income"
-              ? prev.settings.incomeCategories.filter((item) => item !== value)
+              ? prev.settings.incomeCategories.length <= 1
+                ? prev.settings.incomeCategories
+                : prev.settings.incomeCategories.filter((item) => item !== value)
               : prev.settings.incomeCategories,
           expenseCategories:
             type === "expense"
-              ? prev.settings.expenseCategories.filter((item) => item !== value)
+              ? prev.settings.expenseCategories.length <= 1
+                ? prev.settings.expenseCategories
+                : prev.settings.expenseCategories.filter((item) => item !== value)
               : prev.settings.expenseCategories,
         },
       }));
@@ -359,4 +386,3 @@ export function useFinance() {
   }
   return context;
 }
-
