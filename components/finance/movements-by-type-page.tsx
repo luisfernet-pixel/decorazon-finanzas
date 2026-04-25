@@ -4,6 +4,7 @@ import { FormEvent, useMemo, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
 import { Movement, MovementType } from "@/lib/finance/types";
 import { formatBs, todayIso } from "@/lib/finance/utils";
+import { defaultSettings } from "@/lib/finance/defaults";
 
 interface MonthlyGroup {
   key: string;
@@ -60,7 +61,13 @@ interface MovementForm {
 export function MovementsByTypePage({ type }: { type: MovementType }) {
   const { movements, settings, addMovement, updateMovement, deleteMovement } = useFinance();
   const isIncome = type === "ingreso";
-  const categories = isIncome ? settings.incomeCategories : settings.expenseCategories;
+  const categories = useMemo(() => {
+    const fromState = isIncome ? settings.incomeCategories : settings.expenseCategories;
+    const fallback = isIncome
+      ? defaultSettings.incomeCategories
+      : defaultSettings.expenseCategories;
+    return Array.from(new Set([...fromState, ...fallback]));
+  }, [isIncome, settings.expenseCategories, settings.incomeCategories]);
   const [form, setForm] = useState<MovementForm>({
     date: todayIso(),
     description: "",
