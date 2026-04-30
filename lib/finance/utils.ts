@@ -9,6 +9,41 @@ export function formatBs(value: number): string {
   }).format(value)}`;
 }
 
+export function parseMoneyInput(value: string): number {
+  const raw = value.trim().replace(/\s+/g, "");
+  if (!raw) {
+    return 0;
+  }
+
+  const lastComma = raw.lastIndexOf(",");
+  const lastDot = raw.lastIndexOf(".");
+
+  let normalized = raw;
+
+  if (lastComma >= 0 && lastDot >= 0) {
+    const decimalSeparator = lastComma > lastDot ? "," : ".";
+    const thousandSeparator = decimalSeparator === "," ? "." : ",";
+    normalized = raw.split(thousandSeparator).join("").replace(decimalSeparator, ".");
+  } else if (lastComma >= 0) {
+    normalized = raw.replace(/\./g, "").replace(",", ".");
+  } else {
+    normalized = raw.replace(/,/g, "");
+  }
+
+  normalized = normalized.replace(/[^0-9.-]/g, "");
+
+  const isNegative = normalized.startsWith("-");
+  const unsigned = isNegative ? normalized.slice(1).replace(/-/g, "") : normalized.replace(/-/g, "");
+  const [integerPart, ...decimalParts] = unsigned.split(".");
+  const collapsed = decimalParts.length
+    ? `${integerPart}.${decimalParts.join("")}`
+    : integerPart;
+  const safe = isNegative ? `-${collapsed}` : collapsed;
+
+  const result = Number(safe);
+  return Number.isFinite(result) ? result : 0;
+}
+
 export function dateToMonthName(date: string): string {
   const parsed = new Date(`${date}T00:00:00`);
   return monthFormatter.format(parsed).toLowerCase();
@@ -107,4 +142,3 @@ export function summarizeDashboard(state: FinanceState) {
     payables,
   };
 }
-
