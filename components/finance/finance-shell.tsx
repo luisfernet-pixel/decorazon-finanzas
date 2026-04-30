@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 
 const links = [
   { href: "/dashboard", label: "Inicio" },
@@ -13,16 +13,12 @@ const links = [
   { href: "/cuentas-por-pagar", label: "Por pagar" },
   { href: "/reportes", label: "Reportes" },
   { href: "/configuracion", label: "Configuracion" },
-  {
-    href: "https://finanzasdecorazon.vercel.app/portal",
-    label: "Salir",
-    isExit: true,
-    external: true,
-  },
+  { href: "#", label: "Salir", isExit: true },
 ];
 
 export function FinanceShell({ children }: PropsWithChildren) {
   const pathname = usePathname();
+  const [showPortalSwitch, setShowPortalSwitch] = useState(false);
 
   return (
     <div className="min-h-screen px-4 py-4 md:px-8 md:py-6">
@@ -68,11 +64,16 @@ export function FinanceShell({ children }: PropsWithChildren) {
                 : "!bg-white text-[#113161] hover:!border-cyan-500 hover:!bg-cyan-50"
           }`;
 
-          if (link.external) {
+          if (link.isExit) {
             return (
-              <a key={link.href} href={link.href} className={className}>
+              <button
+                key={link.label}
+                type="button"
+                className={className}
+                onClick={() => setShowPortalSwitch((current) => !current)}
+              >
                 {link.label}
-              </a>
+              </button>
             );
           }
 
@@ -83,6 +84,26 @@ export function FinanceShell({ children }: PropsWithChildren) {
           );
         })}
       </nav>
+
+      {showPortalSwitch ? (
+        <section className="decorazon-card mt-4 p-4">
+          <p className="text-sm font-bold text-[#113161]">Ir a:</p>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            <a
+              href="https://finanzasdecorazon.vercel.app/"
+              className="decorazon-button rounded-xl border border-cyan-200 bg-cyan-50 px-4 py-2 text-center font-extrabold text-[#113161] hover:bg-cyan-100"
+            >
+              Portal Finanzas
+            </a>
+            <a
+              href="https://decorazon-cotizador-r3v3.vercel.app/"
+              className="decorazon-button rounded-xl border border-cyan-200 bg-cyan-50 px-4 py-2 text-center font-extrabold text-[#113161] hover:bg-cyan-100"
+            >
+              Portal Cotizador
+            </a>
+          </div>
+        </section>
+      ) : null}
 
       <main className="mt-5 pb-8">{children}</main>
     </div>
