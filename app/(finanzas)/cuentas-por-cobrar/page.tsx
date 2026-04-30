@@ -2,13 +2,13 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
-import { formatBs, todayIso } from "@/lib/finance/utils";
+import { formatBs, parseMoneyInput, todayIso } from "@/lib/finance/utils";
 
 interface ReceivableForm {
   client: string;
   project: string;
-  totalAmount: number;
-  paidAmount: number;
+  totalAmount: string;
+  paidAmount: string;
   commitmentDate: string;
   notes: string;
 }
@@ -16,8 +16,8 @@ interface ReceivableForm {
 const emptyReceivable = (): ReceivableForm => ({
   client: "",
   project: "",
-  totalAmount: 0,
-  paidAmount: 0,
+  totalAmount: "",
+  paidAmount: "",
   commitmentDate: todayIso(),
   notes: "",
 });
@@ -42,15 +42,17 @@ export default function CuentasPorCobrarPage() {
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!form.client.trim() || !form.project.trim() || form.totalAmount <= 0) {
+    const totalAmount = parseMoneyInput(form.totalAmount);
+    const paidAmount = Math.max(parseMoneyInput(form.paidAmount), 0);
+    if (!form.client.trim() || !form.project.trim() || totalAmount <= 0) {
       return;
     }
 
     const payload = {
       client: form.client.trim(),
       project: form.project.trim(),
-      totalAmount: form.totalAmount,
-      paidAmount: Math.max(form.paidAmount, 0),
+      totalAmount,
+      paidAmount,
       commitmentDate: form.commitmentDate,
       notes: form.notes.trim(),
     };
@@ -102,11 +104,11 @@ export default function CuentasPorCobrarPage() {
             Monto total (Bs)
             <input
               className="decorazon-input mt-1"
-              type="number"
-              min="0"
-              step="0.01"
+              type="text"
+              inputMode="decimal"
+              placeholder="Ej: 3500.75 o 3500,75"
               value={form.totalAmount}
-              onChange={(e) => setForm((prev) => ({ ...prev, totalAmount: Number(e.target.value) }))}
+              onChange={(e) => setForm((prev) => ({ ...prev, totalAmount: e.target.value }))}
               required
             />
           </label>
@@ -114,11 +116,11 @@ export default function CuentasPorCobrarPage() {
             Monto pagado (Bs)
             <input
               className="decorazon-input mt-1"
-              type="number"
-              min="0"
-              step="0.01"
+              type="text"
+              inputMode="decimal"
+              placeholder="Ej: 1200.50 o 1200,50"
               value={form.paidAmount}
-              onChange={(e) => setForm((prev) => ({ ...prev, paidAmount: Number(e.target.value) }))}
+              onChange={(e) => setForm((prev) => ({ ...prev, paidAmount: e.target.value }))}
               required
             />
           </label>
@@ -126,7 +128,9 @@ export default function CuentasPorCobrarPage() {
             Saldo automático (Bs)
             <input
               className="decorazon-input mt-1 bg-slate-100"
-              value={formatBs(Math.max(form.totalAmount - form.paidAmount, 0))}
+              value={formatBs(
+                Math.max(parseMoneyInput(form.totalAmount) - parseMoneyInput(form.paidAmount), 0),
+              )}
               disabled
             />
           </label>
@@ -164,7 +168,7 @@ export default function CuentasPorCobrarPage() {
       <section className="decorazon-card p-5">
         <h3 className="text-2xl font-extrabold text-[#112f5b]">Pendientes y cobradas</h3>
         <div className="mt-3 overflow-x-auto">
-          <table className="w-full min-w-[900px] text-left">
+          <table className="w-full text-left">
             <thead className="text-xs uppercase text-slate-500">
               <tr>
                 <th className="py-2">Cliente</th>
@@ -199,7 +203,8 @@ export default function CuentasPorCobrarPage() {
                       {item.status}
                     </span>
                   </td>
-                  <td className="space-x-2 whitespace-nowrap">
+                  <td>
+                    <div className="flex flex-wrap items-center gap-2">
                     <button
                       className="decorazon-button bg-cyan-700 px-3 py-1.5 text-white"
                       onClick={() => {
@@ -207,8 +212,8 @@ export default function CuentasPorCobrarPage() {
                         setForm({
                           client: item.client,
                           project: item.project,
-                          totalAmount: item.totalAmount,
-                          paidAmount: item.paidAmount,
+                          totalAmount: String(item.totalAmount),
+                          paidAmount: String(item.paidAmount),
                           commitmentDate: item.commitmentDate,
                           notes: item.notes ?? "",
                         });
@@ -225,7 +230,7 @@ export default function CuentasPorCobrarPage() {
                     {item.status !== "pagado" && item.balance > 0 && (
                       <>
                         <input
-                          className="decorazon-input inline-block w-[150px]"
+                          className="h-9 w-[140px] rounded-xl border border-slate-300 bg-white px-3 text-sm text-slate-700"
                           type="date"
                           value={paidDates[item.id] ?? todayIso()}
                           onChange={(event) =>
@@ -240,6 +245,7 @@ export default function CuentasPorCobrarPage() {
                         </button>
                       </>
                     )}
+                    </div>
                   </td>
                 </tr>
               ))}

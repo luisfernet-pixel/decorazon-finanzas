@@ -3,7 +3,7 @@
 import { FormEvent, useMemo, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
 import { Movement, MovementType } from "@/lib/finance/types";
-import { formatBs, todayIso } from "@/lib/finance/utils";
+import { formatBs, monthKey, parseMoneyInput, todayIso } from "@/lib/finance/utils";
 import { defaultSettings } from "@/lib/finance/defaults";
 
 interface MonthlyGroup {
@@ -52,14 +52,25 @@ interface MovementForm {
   date: string;
   description: string;
   category: string;
-  amount: number;
+  amount: string;
   contact: string;
   paymentMethod: string;
   notes: string;
 }
 
+const paymentMethodOptions = ["QR", "Transferencia", "Efectivo", "Otro"] as const;
+
 export function MovementsByTypePage({ type }: { type: MovementType }) {
-  const { movements, settings, addMovement, updateMovement, deleteMovement } = useFinance();
+  const {
+    movements,
+    settings,
+    addMovement,
+    updateMovement,
+    deleteMovement,
+    closeMonth,
+    openMonth,
+    isMonthClosed,
+  } = useFinance();
   const isIncome = type === "ingreso";
   const categories = useMemo(() => {
     const fromState = isIncome ? settings.incomeCategories : settings.expenseCategories;
@@ -72,12 +83,17 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
     date: todayIso(),
     description: "",
     category: categories[0] ?? "Otros",
-    amount: 0,
+    amount: "",
     contact: "",
     paymentMethod: "",
     notes: "",
   });
   const [editingId, setEditingId] = useState<string | null>(null);
+  const formMonthClosed = isMonthClosed(monthKey(form.date));
+  const normalizedPaymentMethod =
+    form.paymentMethod && !paymentMethodOptions.includes(form.paymentMethod as (typeof paymentMethodOptions)[number])
+      ? "Otro"
+      : form.paymentMethod;
 
   const typedMovements = useMemo(
     () => movements.filter((item) => item.type === type),
@@ -87,7 +103,8 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!form.description.trim() || !form.category.trim() || form.amount <= 0) {
+    const amount = parseMoneyInput(form.amount);
+    if (!form.description.trim() || !form.category.trim() || amount <= 0) {
       return;
     }
 
@@ -96,7 +113,7 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
       date: form.date,
       description: form.description.trim(),
       category: form.category.trim(),
-      amount: form.amount,
+      amount,
       clientOrProvider: form.contact.trim(),
       paymentMethod: form.paymentMethod.trim(),
       notes: form.notes.trim(),
@@ -113,7 +130,7 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
       date: todayIso(),
       description: "",
       category: categories[0] ?? "Otros",
-      amount: 0,
+      amount: "",
       contact: "",
       paymentMethod: "",
       notes: "",
@@ -150,11 +167,11 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
             Monto (Bs)
             <input
               className="decorazon-input mt-1"
-              type="number"
-              min="0"
-              step="0.01"
+              type="text"
+              inputMode="decimal"
+              placeholder="Ej: 1500.50 o 1500,50"
               value={form.amount}
-              onChange={(e) => setForm((prev) => ({ ...prev, amount: Number(e.target.value) }))}
+              onChange={(e) => setForm((prev) => ({ ...prev, amount: e.target.value }))}
               required
             />
           </label>
@@ -184,11 +201,18 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
           </label>
           <label className="text-sm font-semibold text-slate-600">
             Metodo de pago (opcional)
-            <input
+            <select
               className="decorazon-input mt-1"
-              value={form.paymentMethod}
+              value={normalizedPaymentMethod}
               onChange={(e) => setForm((prev) => ({ ...prev, paymentMethod: e.target.value }))}
-            />
+            >
+              <option value="">Opcional</option>
+              {paymentMethodOptions.map((method) => (
+                <option key={method} value={method}>
+                  {method}
+                </option>
+              ))}
+            </select>
           </label>
           <label className="text-sm font-semibold text-slate-600 md:col-span-2 xl:col-span-4">
             Notas
@@ -199,8 +223,14 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
             />
           </label>
           <div className="md:col-span-2 xl:col-span-4">
+            {formMonthClosed && (
+              <p className="mb-2 text-sm font-semibold text-amber-700">
+                El mes de la fecha seleccionada esta bloqueado.
+              </p>
+            )}
             <button
               type="submit"
+              disabled={formMonthClosed}
               className="decorazon-button bg-gradient-to-r from-cyan-700 to-cyan-500 px-8 py-3 text-white shadow-md shadow-cyan-700/25"
             >
               {editingId
@@ -217,7 +247,7 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
                     date: todayIso(),
                     description: "",
                     category: categories[0] ?? "Otros",
-                    amount: 0,
+                    amount: "",
                     contact: "",
                     paymentMethod: "",
                     notes: "",
@@ -245,9 +275,24 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
               <summary className="cursor-pointer list-none px-4 py-3">
                 <div className="flex items-center justify-between">
                   <p className="font-extrabold text-[#123260] capitalize">{group.title}</p>
-                  <p className={`font-bold ${isIncome ? "text-emerald-700" : "text-rose-700"}`}>
-                    Total: {formatBs(group.total)}
-                  </p>
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      className={`decorazon-button px-3 py-1.5 text-xs font-bold ${
+                        isMonthClosed(group.key)
+                          ? "border border-amber-300 bg-amber-50 text-amber-800"
+                          : "bg-slate-100 text-slate-700"
+                      }`}
+                      onClick={() =>
+                        isMonthClosed(group.key) ? openMonth(group.key) : closeMonth(group.key)
+                      }
+                    >
+                      {isMonthClosed(group.key) ? "Desbloquear mes" : "Bloquear mes"}
+                    </button>
+                    <p className={`font-bold ${isIncome ? "text-emerald-700" : "text-rose-700"}`}>
+                      Total: {formatBs(group.total)}
+                    </p>
+                  </div>
                 </div>
               </summary>
               <div className="overflow-x-auto border-t border-slate-200 px-3 py-2">
@@ -275,15 +320,29 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
                         <td className="font-bold">{formatBs(item.amount)}</td>
                         <td className="max-w-[220px] truncate">{item.notes || "-"}</td>
                         <td className="space-x-2 whitespace-nowrap">
+                          {(() => {
+                            const blocked = isMonthClosed(group.key);
+                            return (
+                              <>
                           <button
-                            className="decorazon-button bg-cyan-700 px-3 py-1.5 text-white"
+                            className={`decorazon-button px-3 py-1.5 text-white ${
+                              blocked
+                                ? "cursor-not-allowed bg-slate-400 opacity-70"
+                                : "bg-cyan-700"
+                            }`}
                             onClick={() => {
+                              if (blocked) {
+                                window.alert(
+                                  "Este mes esta bloqueado. Desbloquealo en el encabezado del mes para editar.",
+                                );
+                                return;
+                              }
                               setEditingId(item.id);
                               setForm({
                                 date: item.date,
                                 description: item.description,
                                 category: item.category,
-                                amount: item.amount,
+                                amount: String(item.amount),
                                 contact: item.clientOrProvider ?? "",
                                 paymentMethod: item.paymentMethod ?? "",
                                 notes: item.notes ?? "",
@@ -293,11 +352,26 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
                             Editar
                           </button>
                           <button
-                            className="decorazon-button bg-rose-500 px-3 py-1.5 text-white"
-                            onClick={() => deleteMovement(item.id)}
+                            className={`decorazon-button px-3 py-1.5 text-white ${
+                              blocked
+                                ? "cursor-not-allowed bg-slate-400 opacity-70"
+                                : "bg-rose-500"
+                            }`}
+                            onClick={() => {
+                              if (blocked) {
+                                window.alert(
+                                  "Este mes esta bloqueado. Desbloquealo en el encabezado del mes para eliminar.",
+                                );
+                                return;
+                              }
+                              deleteMovement(item.id);
+                            }}
                           >
                             Eliminar
                           </button>
+                              </>
+                            );
+                          })()}
                         </td>
                       </tr>
                     ))}

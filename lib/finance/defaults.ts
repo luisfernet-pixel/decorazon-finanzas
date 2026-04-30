@@ -31,6 +31,8 @@ export const defaultSettings: FinanceSettings = {
     "Intereses",
     "Otros",
   ],
+  closedMonths: [],
+  lastBackupAt: null,
 };
 
 function expenseCategoryFromDescription(description: string): string {
@@ -105,4 +107,3 @@ export const initialFinanceState: FinanceState = {
   payables: [],
   settings: defaultSettings,
 };
-

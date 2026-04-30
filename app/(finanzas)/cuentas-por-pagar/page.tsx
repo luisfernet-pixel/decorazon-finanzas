@@ -2,13 +2,13 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
-import { formatBs, todayIso } from "@/lib/finance/utils";
+import { formatBs, parseMoneyInput, todayIso } from "@/lib/finance/utils";
 import { PayableStatus } from "@/lib/finance/types";
 
 interface PayableForm {
   provider: string;
   concept: string;
-  amount: number;
+  amount: string;
   dueDate: string;
   status: PayableStatus;
   notes: string;
@@ -17,7 +17,7 @@ interface PayableForm {
 const emptyPayable = (): PayableForm => ({
   provider: "",
   concept: "",
-  amount: 0,
+  amount: "",
   dueDate: todayIso(),
   status: "pendiente",
   notes: "",
@@ -42,14 +42,15 @@ export default function CuentasPorPagarPage() {
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!form.provider.trim() || !form.concept.trim() || form.amount <= 0) {
+    const amount = parseMoneyInput(form.amount);
+    if (!form.provider.trim() || !form.concept.trim() || amount <= 0) {
       return;
     }
 
     const payload = {
       provider: form.provider.trim(),
       concept: form.concept.trim(),
-      amount: form.amount,
+      amount,
       dueDate: form.dueDate,
       status: form.status,
       notes: form.notes.trim(),
@@ -102,11 +103,11 @@ export default function CuentasPorPagarPage() {
             Monto (Bs)
             <input
               className="decorazon-input mt-1"
-              type="number"
-              min="0"
-              step="0.01"
+              type="text"
+              inputMode="decimal"
+              placeholder="Ej: 900.25 o 900,25"
               value={form.amount}
-              onChange={(e) => setForm((prev) => ({ ...prev, amount: Number(e.target.value) }))}
+              onChange={(e) => setForm((prev) => ({ ...prev, amount: e.target.value }))}
               required
             />
           </label>
@@ -158,7 +159,7 @@ export default function CuentasPorPagarPage() {
       <section className="decorazon-card p-5">
         <h3 className="text-2xl font-extrabold text-[#112f5b]">Pendientes y pagadas</h3>
         <div className="mt-3 overflow-x-auto">
-          <table className="w-full min-w-[900px] text-left">
+          <table className="w-full text-left">
             <thead className="text-xs uppercase text-slate-500">
               <tr>
                 <th className="py-2">Proveedor</th>
@@ -191,7 +192,8 @@ export default function CuentasPorPagarPage() {
                     </span>
                   </td>
                   <td className="max-w-[220px] truncate">{item.notes || "-"}</td>
-                  <td className="space-x-2 whitespace-nowrap">
+                  <td>
+                    <div className="flex flex-wrap items-center gap-2">
                     <button
                       className="decorazon-button bg-cyan-700 px-3 py-1.5 text-white"
                       onClick={() => {
@@ -199,7 +201,7 @@ export default function CuentasPorPagarPage() {
                         setForm({
                           provider: item.provider,
                           concept: item.concept,
-                          amount: item.amount,
+                          amount: String(item.amount),
                           dueDate: item.dueDate,
                           status: item.status,
                           notes: item.notes ?? "",
@@ -217,7 +219,7 @@ export default function CuentasPorPagarPage() {
                     {item.status !== "pagado" && (
                       <>
                         <input
-                          className="decorazon-input inline-block w-[150px]"
+                          className="h-9 w-[140px] rounded-xl border border-slate-300 bg-white px-3 text-sm text-slate-700"
                           type="date"
                           value={paidDates[item.id] ?? todayIso()}
                           onChange={(event) =>
@@ -232,6 +234,7 @@ export default function CuentasPorPagarPage() {
                         </button>
                       </>
                     )}
+                    </div>
                   </td>
                 </tr>
               ))}

@@ -6,20 +6,25 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
-import { initialFinanceState, isLegacyDemoState } from "@/lib/finance/defaults";
-import { summarizeDashboard } from "@/lib/finance/utils";
+import { initialFinanceState } from "@/lib/finance/defaults";
 import {
   calculatePayableStatus,
   calculateReceivableState,
   dateToMonthName,
+  monthKey,
+  summarizeDashboard,
   todayIso,
 } from "@/lib/finance/utils";
 import { FinanceState, Movement, Payable, Receivable } from "@/lib/finance/types";
-import { defaultSettings } from "@/lib/finance/defaults";
+import { normalizeFinanceState, parseFinanceState } from "@/lib/finance/state";
+import { getSupabaseBrowserClient, isSupabaseConfigured } from "@/lib/supabase/client";
 
 const STORAGE_KEY = "decorazon-finanzas-v1";
+const FINANCE_STATE_ROW_ID = "main";
+const FINANCE_STATE_TABLE = "finance_state";
 
 interface FinanceContextValue extends FinanceState {
   dashboard: ReturnType<typeof summarizeDashboard>;
@@ -42,6 +47,18 @@ interface FinanceContextValue extends FinanceState {
   deletePayable: (id: string) => void;
   addCategory: (type: "income" | "expense", value: string) => void;
   removeCategory: (type: "income" | "expense", value: string) => void;
+  closeMonth: (month: string) => void;
+  openMonth: (month: string) => void;
+  isMonthClosed: (month: string) => boolean;
+  replaceMovements: (movements: Movement[]) => void;
+  replaceFinanceData: (payload: {
+    movements?: Movement[];
+    receivables?: Receivable[];
+    payables?: Payable[];
+  }) => void;
+  markBackupCompleted: () => void;
+  exportBackup: () => string;
+  importBackup: (raw: string) => { ok: boolean; error?: string };
 }
 
 const FinanceContext = createContext<FinanceContextValue | null>(null);
@@ -50,75 +67,224 @@ function createId(prefix: string): string {
   if (typeof crypto !== "undefined" && crypto.randomUUID) {
     return `${prefix}-${crypto.randomUUID()}`;
   }
-
   return `${prefix}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
 }
 
-function parseStoredState(raw: string): FinanceState {
-  const parsed = JSON.parse(raw) as Partial<FinanceState>;
-
-  const normalizedIncome = Array.from(
-    new Set([
-      ...((parsed.settings?.incomeCategories ?? [])
-        .map((item) => item.trim())
-        .filter(Boolean) as string[]),
-      ...defaultSettings.incomeCategories,
-    ]),
-  );
-
-  const normalizedExpense = Array.from(
-    new Set([
-      ...((parsed.settings?.expenseCategories ?? [])
-        .map((item) => item.trim())
-        .filter(Boolean) as string[]),
-      ...defaultSettings.expenseCategories,
-    ]),
-  );
-
-  const state: FinanceState = {
-    movements: parsed.movements ?? [],
-    receivables: parsed.receivables ?? [],
-    payables: parsed.payables ?? [],
-    settings: {
-      incomeCategories: normalizedIncome,
-      expenseCategories: normalizedExpense,
-    },
-  };
-
-  if (state.movements.length === 0 || isLegacyDemoState(state)) {
-    return {
-      ...state,
-      movements: initialFinanceState.movements,
-    };
+function readLocalBackup(): FinanceState | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) {
+      return null;
+    }
+    return parseFinanceState(raw);
+  } catch {
+    return null;
   }
-
-  return state;
 }
 
 export function FinanceProvider({ children }: PropsWithChildren) {
   const [state, setState] = useState<FinanceState>(initialFinanceState);
-  const [storageLoaded, setStorageLoaded] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(false);
+  const stateRef = useRef(state);
+  const lastRemoteSnapshotRef = useRef<string | null>(null);
+  const isApplyingRemoteRef = useRef(false);
+  const realtimeEnabled = isSupabaseConfigured();
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        setState(parseStoredState(raw));
+    stateRef.current = state;
+  }, [state]);
+
+  useEffect(() => {
+    const bootstrap = async () => {
+      const localBackup = readLocalBackup();
+      const supabase = getSupabaseBrowserClient();
+
+      if (!realtimeEnabled || !supabase) {
+        if (localBackup) {
+          setState(localBackup);
+        }
+        setDataLoaded(true);
+        return;
       }
-    } finally {
-      setStorageLoaded(true);
-    }
-  }, []);
+
+      try {
+        const { data, error } = await supabase
+          .from(FINANCE_STATE_TABLE)
+          .select("state")
+          .eq("id", FINANCE_STATE_ROW_ID)
+          .maybeSingle<{ state: Partial<FinanceState> }>();
+
+        if (error) {
+          throw error;
+        }
+
+        if (data?.state) {
+          const remoteState = normalizeFinanceState(data.state);
+          const snapshot = JSON.stringify(remoteState);
+          lastRemoteSnapshotRef.current = snapshot;
+          isApplyingRemoteRef.current = true;
+          setState(remoteState);
+        } else {
+          const seedState = localBackup ?? initialFinanceState;
+          const normalizedSeed = normalizeFinanceState(seedState);
+          await supabase.from(FINANCE_STATE_TABLE).upsert(
+            {
+              id: FINANCE_STATE_ROW_ID,
+              state: normalizedSeed,
+            },
+            { onConflict: "id" },
+          );
+          const snapshot = JSON.stringify(normalizedSeed);
+          lastRemoteSnapshotRef.current = snapshot;
+          setState(normalizedSeed);
+        }
+      } catch {
+        if (localBackup) {
+          setState(localBackup);
+        }
+      } finally {
+        setDataLoaded(true);
+      }
+    };
+
+    void bootstrap();
+  }, [realtimeEnabled]);
 
   useEffect(() => {
-    if (!storageLoaded) {
+    if (!dataLoaded) {
       return;
     }
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }, [state, storageLoaded]);
+  }, [dataLoaded, state]);
+
+  useEffect(() => {
+    if (!dataLoaded || !realtimeEnabled) {
+      return;
+    }
+
+    const supabase = getSupabaseBrowserClient();
+    if (!supabase) {
+      return;
+    }
+
+    const channel = supabase
+      .channel("finance-state-main")
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: FINANCE_STATE_TABLE,
+          filter: `id=eq.${FINANCE_STATE_ROW_ID}`,
+        },
+        (payload) => {
+          const nextState = (payload.new as { state?: Partial<FinanceState> } | null)?.state;
+          if (!nextState) {
+            return;
+          }
+          const normalized = normalizeFinanceState(nextState);
+          const remoteSnapshot = JSON.stringify(normalized);
+          const localSnapshot = JSON.stringify(stateRef.current);
+          lastRemoteSnapshotRef.current = remoteSnapshot;
+
+          if (remoteSnapshot !== localSnapshot) {
+            isApplyingRemoteRef.current = true;
+            setState(normalized);
+          }
+        },
+      )
+      .subscribe();
+
+    return () => {
+      void supabase.removeChannel(channel);
+    };
+  }, [dataLoaded, realtimeEnabled]);
+
+  useEffect(() => {
+    if (!dataLoaded || !realtimeEnabled) {
+      return;
+    }
+
+    if (isApplyingRemoteRef.current) {
+      isApplyingRemoteRef.current = false;
+      return;
+    }
+
+    const localSnapshot = JSON.stringify(state);
+    if (localSnapshot === lastRemoteSnapshotRef.current) {
+      return;
+    }
+
+    let cancelled = false;
+    const supabase = getSupabaseBrowserClient();
+    if (!supabase) {
+      return;
+    }
+
+    const pushState = async () => {
+      try {
+        const { data, error } = await supabase
+          .from(FINANCE_STATE_TABLE)
+          .upsert(
+            {
+              id: FINANCE_STATE_ROW_ID,
+              state,
+            },
+            { onConflict: "id" },
+          )
+          .select("state")
+          .single<{ state: Partial<FinanceState> }>();
+
+        if (error || cancelled) {
+          return;
+        }
+
+        const normalized = normalizeFinanceState(data?.state);
+        const remoteSnapshot = JSON.stringify(normalized);
+        lastRemoteSnapshotRef.current = remoteSnapshot;
+
+        if (remoteSnapshot !== localSnapshot) {
+          isApplyingRemoteRef.current = true;
+          setState(normalized);
+        }
+      } catch {
+        // Keep local data and retry on next change.
+      }
+    };
+
+    void pushState();
+    return () => {
+      cancelled = true;
+    };
+  }, [dataLoaded, realtimeEnabled, state]);
+
+  useEffect(() => {
+    const syncFromStorage = (event: StorageEvent) => {
+      if (event.key !== STORAGE_KEY || !event.newValue) {
+        return;
+      }
+      try {
+        const parsed = parseFinanceState(event.newValue);
+        const snapshot = JSON.stringify(parsed);
+        lastRemoteSnapshotRef.current = snapshot;
+        isApplyingRemoteRef.current = true;
+        setState(parsed);
+      } catch {
+        // Ignore malformed values written from other tabs/windows.
+      }
+    };
+
+    window.addEventListener("storage", syncFromStorage);
+    return () => window.removeEventListener("storage", syncFromStorage);
+  }, []);
 
   const value = useMemo<FinanceContextValue>(() => {
+    const isDateClosed = (date: string) => state.settings.closedMonths.includes(monthKey(date));
+
     const addMovement: FinanceContextValue["addMovement"] = (movement) => {
+      if (isDateClosed(movement.date)) {
+        return;
+      }
       setState((prev) => ({
         ...prev,
         movements: [
@@ -134,24 +300,39 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     };
 
     const updateMovement: FinanceContextValue["updateMovement"] = (id, movement) => {
-      setState((prev) => ({
-        ...prev,
-        movements: prev.movements.map((item) =>
-          item.id === id
-            ? { ...item, ...movement, month: dateToMonthName(movement.date) }
-            : item,
-        ),
-      }));
+      setState((prev) => {
+        const current = prev.movements.find((item) => item.id === id);
+        if (!current || isDateClosed(current.date) || isDateClosed(movement.date)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          movements: prev.movements.map((item) =>
+            item.id === id
+              ? { ...item, ...movement, month: dateToMonthName(movement.date) }
+              : item,
+          ),
+        };
+      });
     };
 
     const deleteMovement: FinanceContextValue["deleteMovement"] = (id) => {
-      setState((prev) => ({
-        ...prev,
-        movements: prev.movements.filter((item) => item.id !== id),
-      }));
+      setState((prev) => {
+        const current = prev.movements.find((item) => item.id === id);
+        if (!current || isDateClosed(current.date)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          movements: prev.movements.filter((item) => item.id !== id),
+        };
+      });
     };
 
     const addReceivable: FinanceContextValue["addReceivable"] = (receivable) => {
+      if (isDateClosed(receivable.commitmentDate)) {
+        return;
+      }
       const computed = calculateReceivableState(
         receivable.totalAmount,
         receivable.paidAmount,
@@ -173,6 +354,14 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     };
 
     const updateReceivable: FinanceContextValue["updateReceivable"] = (id, receivable) => {
+      const current = state.receivables.find((item) => item.id === id);
+      if (
+        !current ||
+        isDateClosed(current.commitmentDate) ||
+        isDateClosed(receivable.commitmentDate)
+      ) {
+        return;
+      }
       const computed = calculateReceivableState(
         receivable.totalAmount,
         receivable.paidAmount,
@@ -190,7 +379,13 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     const markReceivableAsPaid: FinanceContextValue["markReceivableAsPaid"] = (id, paidDate) => {
       setState((prev) => {
         const target = prev.receivables.find((item) => item.id === id);
-        if (!target || target.balance <= 0) {
+        const effectiveDate = paidDate || todayIso();
+        if (
+          !target ||
+          target.balance <= 0 ||
+          isDateClosed(target.commitmentDate) ||
+          isDateClosed(effectiveDate)
+        ) {
           return prev;
         }
 
@@ -212,8 +407,8 @@ export function FinanceProvider({ children }: PropsWithChildren) {
             {
               id: createId("mov"),
               type: "ingreso",
-              date: paidDate || todayIso(),
-              month: dateToMonthName(paidDate || todayIso()),
+              date: effectiveDate,
+              month: dateToMonthName(effectiveDate),
               description: `Pago de cuenta por cobrar - ${target.client}`,
               category: "Pago final",
               amount: paymentAmount,
@@ -228,13 +423,22 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     };
 
     const deleteReceivable: FinanceContextValue["deleteReceivable"] = (id) => {
-      setState((prev) => ({
-        ...prev,
-        receivables: prev.receivables.filter((item) => item.id !== id),
-      }));
+      setState((prev) => {
+        const target = prev.receivables.find((item) => item.id === id);
+        if (!target || isDateClosed(target.commitmentDate)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          receivables: prev.receivables.filter((item) => item.id !== id),
+        };
+      });
     };
 
     const addPayable: FinanceContextValue["addPayable"] = (payable) => {
+      if (isDateClosed(payable.dueDate)) {
+        return;
+      }
       setState((prev) => ({
         ...prev,
         payables: [
@@ -250,24 +454,36 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     };
 
     const updatePayable: FinanceContextValue["updatePayable"] = (id, payable) => {
-      setState((prev) => ({
-        ...prev,
-        payables: prev.payables.map((item) =>
-          item.id === id
-            ? {
-                ...item,
-                ...payable,
-                status: calculatePayableStatus(payable.dueDate, payable.status),
-              }
-            : item,
-        ),
-      }));
+      setState((prev) => {
+        const current = prev.payables.find((item) => item.id === id);
+        if (!current || isDateClosed(current.dueDate) || isDateClosed(payable.dueDate)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          payables: prev.payables.map((item) =>
+            item.id === id
+              ? {
+                  ...item,
+                  ...payable,
+                  status: calculatePayableStatus(payable.dueDate, payable.status),
+                }
+              : item,
+          ),
+        };
+      });
     };
 
     const markPayableAsPaid: FinanceContextValue["markPayableAsPaid"] = (id, paidDate) => {
       setState((prev) => {
         const target = prev.payables.find((item) => item.id === id);
-        if (!target || target.status === "pagado") {
+        const effectiveDate = paidDate || todayIso();
+        if (
+          !target ||
+          target.status === "pagado" ||
+          isDateClosed(target.dueDate) ||
+          isDateClosed(effectiveDate)
+        ) {
           return prev;
         }
 
@@ -285,8 +501,8 @@ export function FinanceProvider({ children }: PropsWithChildren) {
             {
               id: createId("mov"),
               type: "gasto",
-              date: paidDate || todayIso(),
-              month: dateToMonthName(paidDate || todayIso()),
+              date: effectiveDate,
+              month: dateToMonthName(effectiveDate),
               description: `Pago de cuenta por pagar - ${target.provider}`,
               category: "Proveedores",
               amount: target.amount,
@@ -301,10 +517,16 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     };
 
     const deletePayable: FinanceContextValue["deletePayable"] = (id) => {
-      setState((prev) => ({
-        ...prev,
-        payables: prev.payables.filter((item) => item.id !== id),
-      }));
+      setState((prev) => {
+        const target = prev.payables.find((item) => item.id === id);
+        if (!target || isDateClosed(target.dueDate)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          payables: prev.payables.filter((item) => item.id !== id),
+        };
+      });
     };
 
     const addCategory: FinanceContextValue["addCategory"] = (type, value) => {
@@ -361,6 +583,97 @@ export function FinanceProvider({ children }: PropsWithChildren) {
       }));
     };
 
+    const closeMonth: FinanceContextValue["closeMonth"] = (month) => {
+      const cleanMonth = month.trim();
+      if (!cleanMonth) {
+        return;
+      }
+      setState((prev) => {
+        if (prev.settings.closedMonths.includes(cleanMonth)) {
+          return prev;
+        }
+        return {
+          ...prev,
+          settings: {
+            ...prev.settings,
+            closedMonths: [...prev.settings.closedMonths, cleanMonth].sort(),
+          },
+        };
+      });
+    };
+
+    const openMonth: FinanceContextValue["openMonth"] = (month) => {
+      setState((prev) => ({
+        ...prev,
+        settings: {
+          ...prev.settings,
+          closedMonths: prev.settings.closedMonths.filter((item) => item !== month),
+        },
+      }));
+    };
+
+    const isMonthClosed: FinanceContextValue["isMonthClosed"] = (month) =>
+      state.settings.closedMonths.includes(month);
+
+    const replaceMovements: FinanceContextValue["replaceMovements"] = (nextMovements) => {
+      const normalizedMovements = [...nextMovements].sort(
+        (a, b) => b.date.localeCompare(a.date) || b.createdAt.localeCompare(a.createdAt),
+      );
+      setState((prev) => ({
+        ...prev,
+        movements: normalizedMovements,
+      }));
+    };
+
+    const replaceFinanceData: FinanceContextValue["replaceFinanceData"] = (payload) => {
+      setState((prev) => ({
+        ...prev,
+        movements: payload.movements
+          ? [...payload.movements].sort(
+              (a, b) => b.date.localeCompare(a.date) || b.createdAt.localeCompare(a.createdAt),
+            )
+          : prev.movements,
+        receivables: payload.receivables
+          ? [...payload.receivables].sort(
+              (a, b) =>
+                a.status.localeCompare(b.status) ||
+                a.commitmentDate.localeCompare(b.commitmentDate) ||
+                b.createdAt.localeCompare(a.createdAt),
+            )
+          : prev.receivables,
+        payables: payload.payables
+          ? [...payload.payables].sort(
+              (a, b) =>
+                a.status.localeCompare(b.status) ||
+                a.dueDate.localeCompare(b.dueDate) ||
+                b.createdAt.localeCompare(a.createdAt),
+            )
+          : prev.payables,
+      }));
+    };
+
+    const markBackupCompleted: FinanceContextValue["markBackupCompleted"] = () => {
+      setState((prev) => ({
+        ...prev,
+        settings: {
+          ...prev.settings,
+          lastBackupAt: new Date().toISOString(),
+        },
+      }));
+    };
+
+    const exportBackup: FinanceContextValue["exportBackup"] = () => JSON.stringify(state, null, 2);
+
+    const importBackup: FinanceContextValue["importBackup"] = (raw) => {
+      try {
+        const parsed = parseFinanceState(raw);
+        setState(parsed);
+        return { ok: true };
+      } catch {
+        return { ok: false, error: "No se pudo leer el archivo de respaldo." };
+      }
+    };
+
     return {
       ...state,
       dashboard: summarizeDashboard(state),
@@ -377,6 +690,14 @@ export function FinanceProvider({ children }: PropsWithChildren) {
       deletePayable,
       addCategory,
       removeCategory,
+      closeMonth,
+      openMonth,
+      isMonthClosed,
+      replaceMovements,
+      replaceFinanceData,
+      markBackupCompleted,
+      exportBackup,
+      importBackup,
     };
   }, [state]);
 

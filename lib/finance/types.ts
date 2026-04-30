@@ -44,6 +44,8 @@ export interface Payable {
 export interface FinanceSettings {
   expenseCategories: string[];
   incomeCategories: string[];
+  closedMonths: string[];
+  lastBackupAt: string | null;
 }
 
 export interface FinanceState {
@@ -52,4 +54,3 @@ export interface FinanceState {
   payables: Payable[];
   settings: FinanceSettings;
 }
-
