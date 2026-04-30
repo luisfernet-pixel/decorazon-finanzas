@@ -1,7 +1,8 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
 
-const cotizadorUrl = process.env.NEXT_PUBLIC_COTIZADOR_URL?.trim() ?? "";
+const cotizadorUrl =
+  process.env.NEXT_PUBLIC_COTIZADOR_URL?.trim() ?? "https://decorazon-cotizador-r3v3.vercel.app/";
 const hasCotizadorUrl = cotizadorUrl.length > 0;
 
 export default function Home() {
