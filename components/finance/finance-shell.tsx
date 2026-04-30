@@ -13,6 +13,7 @@ const links = [
   { href: "/cuentas-por-pagar", label: "Por pagar" },
   { href: "/reportes", label: "Reportes" },
   { href: "/configuracion", label: "Configuracion" },
+  { href: "/", label: "Salir", isExit: true },
 ];
 
 export function FinanceShell({ children }: PropsWithChildren) {
@@ -51,7 +52,7 @@ export function FinanceShell({ children }: PropsWithChildren) {
         </div>
       </header>
 
-      <nav className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-7">
+      <nav className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-8">
         {links.map((link) => {
           const active = pathname === link.href;
           return (
@@ -61,6 +62,8 @@ export function FinanceShell({ children }: PropsWithChildren) {
               className={`decorazon-card decorazon-button text-center px-4 py-3 font-extrabold ${
                 active
                   ? "!border-cyan-700 !bg-cyan-700 !text-white shadow-lg shadow-cyan-800/25"
+                  : link.isExit
+                    ? "!bg-white text-rose-700 hover:!border-rose-400 hover:!bg-rose-50"
                   : "!bg-white text-[#113161] hover:!border-cyan-500 hover:!bg-cyan-50"
               }`}
             >
