@@ -14,7 +14,7 @@ const links = [
   { href: "/reportes", label: "Reportes" },
   { href: "/configuracion", label: "Configuracion" },
   {
-    href: process.env.NEXT_PUBLIC_PORTAL_URL?.trim() || "https://finanzasdecorazon.vercel.app/portal",
+    href: "https://finanzasdecorazon.vercel.app/portal",
     label: "Salir",
     isExit: true,
     external: true,
