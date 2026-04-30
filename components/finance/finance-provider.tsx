@@ -425,7 +425,10 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     const deleteReceivable: FinanceContextValue["deleteReceivable"] = (id) => {
       setState((prev) => {
         const target = prev.receivables.find((item) => item.id === id);
-        if (!target || isDateClosed(target.commitmentDate)) {
+        if (
+          !target ||
+          (target.status !== "pagado" && isDateClosed(target.commitmentDate))
+        ) {
           return prev;
         }
         return {
@@ -519,7 +522,10 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     const deletePayable: FinanceContextValue["deletePayable"] = (id) => {
       setState((prev) => {
         const target = prev.payables.find((item) => item.id === id);
-        if (!target || isDateClosed(target.dueDate)) {
+        if (
+          !target ||
+          (target.status !== "pagado" && isDateClosed(target.dueDate))
+        ) {
           return prev;
         }
         return {
