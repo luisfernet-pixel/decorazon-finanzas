@@ -23,7 +23,7 @@ export default function ConfiguracionPage() {
   return (
     <div className="grid gap-5 xl:grid-cols-2">
       <section className="decorazon-card p-5">
-        <h2 className="text-2xl font-extrabold text-[#112f5b]">Categorías de ingresos</h2>
+        <h2 className="text-2xl font-extrabold text-[#112f5b]">Categorias de ingresos</h2>
         <form className="mt-3 flex gap-2" onSubmit={addIncomeCategory}>
           <input
             className="decorazon-input"
@@ -54,7 +54,7 @@ export default function ConfiguracionPage() {
       </section>
 
       <section className="decorazon-card p-5">
-        <h2 className="text-2xl font-extrabold text-[#112f5b]">Categorías de gastos</h2>
+        <h2 className="text-2xl font-extrabold text-[#112f5b]">Categorias de gastos</h2>
         <form className="mt-3 flex gap-2" onSubmit={addExpenseCategory}>
           <input
             className="decorazon-input"
@@ -83,7 +83,14 @@ export default function ConfiguracionPage() {
           ))}
         </div>
       </section>
+
+      <section className="decorazon-card p-5 xl:col-span-2">
+        <h2 className="text-2xl font-extrabold text-[#112f5b]">Sincronizacion en tiempo real activa</h2>
+        <p className="mt-2 text-sm text-slate-600">
+          Esta app ya sincroniza automaticamente los datos entre dispositivos conectados al mismo
+          sistema.
+        </p>
+      </section>
     </div>
   );
 }
-
