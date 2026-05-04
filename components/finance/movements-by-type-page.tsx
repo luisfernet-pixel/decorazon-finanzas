@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useRef, useMemo, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
 import { Movement, MovementType } from "@/lib/finance/types";
 import { formatBs, monthKey, parseMoneyInput, todayIso } from "@/lib/finance/utils";
@@ -89,6 +89,8 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
     notes: "",
   });
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [saveNotice, setSaveNotice] = useState("");
+  const saveNoticeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const formMonthClosed = isMonthClosed(monthKey(form.date));
   const normalizedPaymentMethod =
     form.paymentMethod && !paymentMethodOptions.includes(form.paymentMethod as (typeof paymentMethodOptions)[number])
@@ -100,6 +102,25 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
     [movements, type],
   );
   const grouped = useMemo(() => buildMonthlyGroups(typedMovements), [typedMovements]);
+  useEffect(
+    () => () => {
+      if (saveNoticeTimerRef.current) {
+        clearTimeout(saveNoticeTimerRef.current);
+      }
+    },
+    [],
+  );
+
+  const showSaveNotice = (message: string) => {
+    setSaveNotice(message);
+    if (saveNoticeTimerRef.current) {
+      clearTimeout(saveNoticeTimerRef.current);
+    }
+    saveNoticeTimerRef.current = setTimeout(() => {
+      setSaveNotice("");
+      saveNoticeTimerRef.current = null;
+    }, 2000);
+  };
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -121,8 +142,10 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
 
     if (editingId) {
       updateMovement(editingId, payload);
+      showSaveNotice(`${isIncome ? "Ingreso" : "Egreso"} actualizado.`);
     } else {
       addMovement(payload);
+      showSaveNotice(`${isIncome ? "Ingreso" : "Egreso"} guardado.`);
     }
 
     setEditingId(null);
@@ -139,6 +162,11 @@ export function MovementsByTypePage({ type }: { type: MovementType }) {
 
   return (
     <div className="space-y-5">
+      {saveNotice ? (
+        <div className="fixed right-5 top-5 z-50 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
+          {saveNotice}
+        </div>
+      ) : null}
       <section className="decorazon-card p-5">
         <h2 className="text-3xl font-extrabold text-[#112f5b]">
           {isIncome ? "Ingresos" : "Egresos"}

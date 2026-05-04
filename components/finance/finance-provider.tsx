@@ -28,6 +28,8 @@ const FINANCE_STATE_TABLE = "finance_state";
 
 interface FinanceContextValue extends FinanceState {
   dashboard: ReturnType<typeof summarizeDashboard>;
+  noticeMessage: string;
+  notify: (message: string) => void;
   addMovement: (movement: Omit<Movement, "id" | "month" | "createdAt">) => void;
   updateMovement: (
     id: string,
@@ -84,15 +86,37 @@ function readLocalBackup(): FinanceState | null {
 
 export function FinanceProvider({ children }: PropsWithChildren) {
   const [state, setState] = useState<FinanceState>(initialFinanceState);
+  const [noticeMessage, setNoticeMessage] = useState("");
   const [dataLoaded, setDataLoaded] = useState(false);
   const stateRef = useRef(state);
   const lastRemoteSnapshotRef = useRef<string | null>(null);
   const isApplyingRemoteRef = useRef(false);
+  const noticeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const realtimeEnabled = isSupabaseConfigured();
+
+  const notify = (message: string) => {
+    setNoticeMessage(message);
+    if (noticeTimerRef.current) {
+      clearTimeout(noticeTimerRef.current);
+    }
+    noticeTimerRef.current = setTimeout(() => {
+      setNoticeMessage("");
+      noticeTimerRef.current = null;
+    }, 2200);
+  };
 
   useEffect(() => {
     stateRef.current = state;
   }, [state]);
+
+  useEffect(
+    () => () => {
+      if (noticeTimerRef.current) {
+        clearTimeout(noticeTimerRef.current);
+      }
+    },
+    [],
+  );
 
   useEffect(() => {
     const bootstrap = async () => {
@@ -297,14 +321,15 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ...prev.movements,
         ],
       }));
+      notify(`${movement.type === "ingreso" ? "Ingreso" : "Egreso"} guardado.`);
     };
 
     const updateMovement: FinanceContextValue["updateMovement"] = (id, movement) => {
+      const current = state.movements.find((item) => item.id === id);
+      if (!current || isDateClosed(current.date) || isDateClosed(movement.date)) {
+        return;
+      }
       setState((prev) => {
-        const current = prev.movements.find((item) => item.id === id);
-        if (!current || isDateClosed(current.date) || isDateClosed(movement.date)) {
-          return prev;
-        }
         return {
           ...prev,
           movements: prev.movements.map((item) =>
@@ -314,6 +339,7 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ),
         };
       });
+      notify(`${movement.type === "ingreso" ? "Ingreso" : "Egreso"} actualizado.`);
     };
 
     const deleteMovement: FinanceContextValue["deleteMovement"] = (id) => {
@@ -351,6 +377,7 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ...prev.receivables,
         ],
       }));
+      notify("Cuenta por cobrar guardada.");
     };
 
     const updateReceivable: FinanceContextValue["updateReceivable"] = (id, receivable) => {
@@ -374,6 +401,7 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           item.id === id ? { ...item, ...receivable, ...computed } : item,
         ),
       }));
+      notify("Cuenta por cobrar actualizada.");
     };
 
     const markReceivableAsPaid: FinanceContextValue["markReceivableAsPaid"] = (id, paidDate) => {
@@ -383,7 +411,6 @@ export function FinanceProvider({ children }: PropsWithChildren) {
         if (
           !target ||
           target.balance <= 0 ||
-          isDateClosed(target.commitmentDate) ||
           isDateClosed(effectiveDate)
         ) {
           return prev;
@@ -454,14 +481,15 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ...prev.payables,
         ],
       }));
+      notify("Cuenta por pagar guardada.");
     };
 
     const updatePayable: FinanceContextValue["updatePayable"] = (id, payable) => {
+      const current = state.payables.find((item) => item.id === id);
+      if (!current || isDateClosed(current.dueDate) || isDateClosed(payable.dueDate)) {
+        return;
+      }
       setState((prev) => {
-        const current = prev.payables.find((item) => item.id === id);
-        if (!current || isDateClosed(current.dueDate) || isDateClosed(payable.dueDate)) {
-          return prev;
-        }
         return {
           ...prev,
           payables: prev.payables.map((item) =>
@@ -475,6 +503,7 @@ export function FinanceProvider({ children }: PropsWithChildren) {
           ),
         };
       });
+      notify("Cuenta por pagar actualizada.");
     };
 
     const markPayableAsPaid: FinanceContextValue["markPayableAsPaid"] = (id, paidDate) => {
@@ -484,7 +513,6 @@ export function FinanceProvider({ children }: PropsWithChildren) {
         if (
           !target ||
           target.status === "pagado" ||
-          isDateClosed(target.dueDate) ||
           isDateClosed(effectiveDate)
         ) {
           return prev;
@@ -683,6 +711,8 @@ export function FinanceProvider({ children }: PropsWithChildren) {
     return {
       ...state,
       dashboard: summarizeDashboard(state),
+      noticeMessage,
+      notify,
       addMovement,
       updateMovement,
       deleteMovement,
@@ -705,7 +735,7 @@ export function FinanceProvider({ children }: PropsWithChildren) {
       exportBackup,
       importBackup,
     };
-  }, [state]);
+  }, [noticeMessage, state]);
 
   return <FinanceContext.Provider value={value}>{children}</FinanceContext.Provider>;
 }

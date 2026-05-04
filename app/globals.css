@@ -64,3 +64,24 @@ h5 {
 .decorazon-button:hover {
   transform: translateY(-1px);
 }
+
+.dashboard-cotizador-theme {
+  --cot-bg-soft: linear-gradient(180deg, #f6f9fc 0%, #edf3f8 100%);
+  --cot-card-shadow: 0 14px 30px rgba(15, 35, 64, 0.08);
+  --cot-border: #dfe8f1;
+}
+
+.dashboard-cotizador-theme .dashboard-panel {
+  background:
+    radial-gradient(circle at top right, rgba(16, 152, 173, 0.08) 0%, rgba(16, 152, 173, 0) 55%),
+    var(--cot-bg-soft);
+  border-color: var(--cot-border);
+  box-shadow: var(--cot-card-shadow);
+}
+
+.dashboard-cotizador-theme .dashboard-kpi-card {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border-color: #d8e4ef;
+  box-shadow: 0 10px 24px rgba(16, 46, 88, 0.08);
+}

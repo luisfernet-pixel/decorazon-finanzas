@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
 import { formatBs, parseMoneyInput, todayIso } from "@/lib/finance/utils";
 import { PayableStatus } from "@/lib/finance/types";
@@ -28,6 +28,8 @@ export default function CuentasPorPagarPage() {
   const [form, setForm] = useState<PayableForm>(emptyPayable());
   const [editingId, setEditingId] = useState<string | null>(null);
   const [paidDates, setPaidDates] = useState<Record<string, string>>({});
+  const [saveNotice, setSaveNotice] = useState("");
+  const saveNoticeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const ordered = useMemo(
     () =>
@@ -39,6 +41,25 @@ export default function CuentasPorPagarPage() {
       ),
     [payables],
   );
+  useEffect(
+    () => () => {
+      if (saveNoticeTimerRef.current) {
+        clearTimeout(saveNoticeTimerRef.current);
+      }
+    },
+    [],
+  );
+
+  const showSaveNotice = (message: string) => {
+    setSaveNotice(message);
+    if (saveNoticeTimerRef.current) {
+      clearTimeout(saveNoticeTimerRef.current);
+    }
+    saveNoticeTimerRef.current = setTimeout(() => {
+      setSaveNotice("");
+      saveNoticeTimerRef.current = null;
+    }, 2000);
+  };
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -58,8 +79,10 @@ export default function CuentasPorPagarPage() {
 
     if (editingId) {
       updatePayable(editingId, payload);
+      showSaveNotice("Cuenta por pagar actualizada.");
     } else {
       addPayable(payload);
+      showSaveNotice("Cuenta por pagar guardada.");
     }
 
     setEditingId(null);
@@ -68,6 +91,11 @@ export default function CuentasPorPagarPage() {
 
   return (
     <div className="space-y-5">
+      {saveNotice ? (
+        <div className="fixed right-5 top-5 z-50 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
+          {saveNotice}
+        </div>
+      ) : null}
       <section className="decorazon-card p-5">
         <h2 className="text-3xl font-extrabold text-[#112f5b]">Cuentas por pagar</h2>
         <form className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3" onSubmit={submit}>

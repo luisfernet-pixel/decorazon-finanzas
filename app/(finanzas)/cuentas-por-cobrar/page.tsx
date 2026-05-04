@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useFinance } from "@/components/finance/finance-provider";
 import { formatBs, parseMoneyInput, todayIso } from "@/lib/finance/utils";
 
@@ -28,6 +28,8 @@ export default function CuentasPorCobrarPage() {
   const [form, setForm] = useState<ReceivableForm>(emptyReceivable());
   const [editingId, setEditingId] = useState<string | null>(null);
   const [paidDates, setPaidDates] = useState<Record<string, string>>({});
+  const [saveNotice, setSaveNotice] = useState("");
+  const saveNoticeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const ordered = useMemo(
     () =>
@@ -39,6 +41,25 @@ export default function CuentasPorCobrarPage() {
       ),
     [receivables],
   );
+  useEffect(
+    () => () => {
+      if (saveNoticeTimerRef.current) {
+        clearTimeout(saveNoticeTimerRef.current);
+      }
+    },
+    [],
+  );
+
+  const showSaveNotice = (message: string) => {
+    setSaveNotice(message);
+    if (saveNoticeTimerRef.current) {
+      clearTimeout(saveNoticeTimerRef.current);
+    }
+    saveNoticeTimerRef.current = setTimeout(() => {
+      setSaveNotice("");
+      saveNoticeTimerRef.current = null;
+    }, 2000);
+  };
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -59,8 +80,10 @@ export default function CuentasPorCobrarPage() {
 
     if (editingId) {
       updateReceivable(editingId, payload);
+      showSaveNotice("Cuenta por cobrar actualizada.");
     } else {
       addReceivable(payload);
+      showSaveNotice("Cuenta por cobrar guardada.");
     }
 
     setEditingId(null);
@@ -69,6 +92,11 @@ export default function CuentasPorCobrarPage() {
 
   return (
     <div className="space-y-5">
+      {saveNotice ? (
+        <div className="fixed right-5 top-5 z-50 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
+          {saveNotice}
+        </div>
+      ) : null}
       <section className="decorazon-card p-5">
         <h2 className="text-3xl font-extrabold text-[#112f5b]">Cuentas por cobrar</h2>
         <form className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3" onSubmit={submit}>

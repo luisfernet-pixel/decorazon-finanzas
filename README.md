@@ -20,6 +20,21 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Supabase Realtime Setup
+
+This app now supports shared realtime sync for finance data across devices using Supabase.
+
+1. Create `.env.local` from `.env.example` and set:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+```
+
+2. In Supabase SQL Editor, run [`supabase/schema.sql`](supabase/schema.sql).
+3. Restart the app (`npm run dev`).
+4. Open the app on PC and mobile with the same deployed URL. Changes should reflect instantly.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

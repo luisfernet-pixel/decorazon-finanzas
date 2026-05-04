@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PropsWithChildren } from "react";
+import { useFinance } from "@/components/finance/finance-provider";
 
 const links = [
   { href: "/dashboard", label: "Inicio" },
@@ -18,9 +19,15 @@ const links = [
 
 export function FinanceShell({ children }: PropsWithChildren) {
   const pathname = usePathname();
+  const { noticeMessage } = useFinance();
 
   return (
     <div className="min-h-screen px-4 py-4 md:px-8 md:py-6">
+      {noticeMessage ? (
+        <div className="fixed right-5 top-5 z-[9999] rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
+          {noticeMessage}
+        </div>
+      ) : null}
       <header
         className="rounded-[2rem] px-5 py-7 text-white shadow-xl shadow-cyan-900/20 md:px-8"
         style={{
@@ -52,10 +59,10 @@ export function FinanceShell({ children }: PropsWithChildren) {
         </div>
       </header>
 
-      <nav className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-8">
+      <nav className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-8">
         {links.map((link) => {
           const active = pathname === link.href;
-          const className = `decorazon-card decorazon-button text-center px-4 py-3 font-extrabold ${
+          const className = `decorazon-card decorazon-button flex min-h-[52px] items-center justify-center px-4 py-3 text-center text-sm font-extrabold leading-tight sm:text-base ${
             active
               ? "!border-cyan-700 !bg-cyan-700 !text-white shadow-lg shadow-cyan-800/25"
               : link.isExit

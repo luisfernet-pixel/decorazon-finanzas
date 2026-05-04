@@ -72,12 +72,38 @@ export default function ReportesPage() {
     .filter((item) => item.status !== "pagado")
     .reduce((acc, item) => acc + item.amount, 0);
 
+  const totalIncome = movements
+    .filter((item) => item.type === "ingreso")
+    .reduce((acc, item) => acc + item.amount, 0);
+
+  const totalExpense = movements
+    .filter((item) => item.type === "gasto")
+    .reduce((acc, item) => acc + item.amount, 0);
+
+  const reportCards = [
+    { label: "Saldo actual", value: formatBs(dashboard.currentBalance) },
+    { label: "Ingresos acumulados", value: formatBs(totalIncome) },
+    { label: "Gastos acumulados", value: formatBs(totalExpense) },
+    { label: "Utilidad del mes", value: formatBs(dashboard.monthlyProfit) },
+    { label: "Total por cobrar", value: formatBs(receivablePending) },
+    { label: "Total por pagar", value: formatBs(payablePending) },
+  ];
+
   const maxIncomeExpense = Math.max(...incomeVsExpense.map((item) => item.value), 1);
   const maxCategory = Math.max(...expenseByCategory.map((item) => item.amount), 1);
   const topCategories = expenseByCategory.slice(0, 4);
 
   return (
     <div className="space-y-5">
+      <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+        {reportCards.map((card) => (
+          <article key={card.label} className="decorazon-card p-4">
+            <p className="text-sm font-semibold text-slate-500">{card.label}</p>
+            <p className="mt-2 text-2xl font-extrabold text-[#123260]">{card.value}</p>
+          </article>
+        ))}
+      </section>
+
       <section className="grid gap-5 lg:grid-cols-2">
         <article className="decorazon-card p-5">
           <h2 className="text-2xl font-extrabold text-[#112f5b]">Ingresos vs gastos del mes</h2>
@@ -203,4 +229,3 @@ export default function ReportesPage() {
     </div>
   );
 }
-
