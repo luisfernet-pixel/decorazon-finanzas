@@ -19,7 +19,7 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #114f68 0%, #155f7a 45%, #177f98 75%, #34b0c6 100%);
   color: var(--foreground);
   font-family: var(--font-nunito), "Segoe UI", sans-serif;
 }
