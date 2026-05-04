@@ -66,22 +66,52 @@ h5 {
 }
 
 .dashboard-cotizador-theme {
-  --cot-bg-soft: linear-gradient(180deg, #f6f9fc 0%, #edf3f8 100%);
-  --cot-card-shadow: 0 14px 30px rgba(15, 35, 64, 0.08);
-  --cot-border: #dfe8f1;
+  --cot-bg-soft: linear-gradient(180deg, #0e5a43 0%, #0b4a37 100%);
+  --cot-card-shadow: 0 16px 36px rgba(4, 36, 26, 0.36);
+  --cot-border: #1f7a5d;
 }
 
 .dashboard-cotizador-theme .dashboard-panel {
   background:
-    radial-gradient(circle at top right, rgba(16, 152, 173, 0.08) 0%, rgba(16, 152, 173, 0) 55%),
+    radial-gradient(circle at top right, rgba(110, 231, 183, 0.2) 0%, rgba(110, 231, 183, 0) 55%),
     var(--cot-bg-soft);
   border-color: var(--cot-border);
   box-shadow: var(--cot-card-shadow);
+  color: #f8fffb;
 }
 
 .dashboard-cotizador-theme .dashboard-kpi-card {
   background:
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  border-color: #d8e4ef;
-  box-shadow: 0 10px 24px rgba(16, 46, 88, 0.08);
+    linear-gradient(180deg, #0f6a4f 0%, #0d5d46 100%);
+  border-color: #2f8f6f;
+  box-shadow: 0 12px 28px rgba(3, 30, 22, 0.35);
+  color: #f8fffb;
+}
+
+.dashboard-cotizador-theme .decorazon-card {
+  border-color: #2f8f6f;
+}
+
+.dashboard-cotizador-theme .text-slate-500,
+.dashboard-cotizador-theme .text-slate-600,
+.dashboard-cotizador-theme .text-slate-700,
+.dashboard-cotizador-theme .text-slate-800,
+.dashboard-cotizador-theme .text-\[\#112f5b\],
+.dashboard-cotizador-theme .text-\[\#123260\],
+.dashboard-cotizador-theme thead,
+.dashboard-cotizador-theme tbody td,
+.dashboard-cotizador-theme tbody th {
+  color: #f8fffb !important;
+}
+
+.dashboard-cotizador-theme .border-slate-200 {
+  border-color: #2f8f6f !important;
+}
+
+.dashboard-cotizador-theme .bg-white {
+  background-color: rgba(11, 74, 55, 0.66) !important;
+}
+
+.dashboard-cotizador-theme .bg-slate-100 {
+  background-color: rgba(167, 243, 208, 0.16) !important;
 }
