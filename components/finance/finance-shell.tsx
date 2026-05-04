@@ -22,7 +22,7 @@ export function FinanceShell({ children }: PropsWithChildren) {
   const { noticeMessage } = useFinance();
 
   return (
-    <div className="min-h-screen px-4 py-4 md:px-8 md:py-6">
+    <div className="finance-theme min-h-screen px-4 py-4 md:px-8 md:py-6">
       {noticeMessage ? (
         <div className="fixed right-5 top-5 z-[9999] rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-lg">
           {noticeMessage}

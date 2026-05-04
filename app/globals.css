@@ -5,9 +5,9 @@
   --foreground: #0d2954;
   --card: #ffffff;
   --border: #d3dee8;
-  --brand-start: #0f7087;
-  --brand-end: #29a5ba;
-  --brand-strong: #0d5f7a;
+  --brand-start: #177f98;
+  --brand-end: #34b0c6;
+  --brand-strong: #155f7a;
   --danger: #ee2463;
 }
 
@@ -66,9 +66,9 @@ h5 {
 }
 
 .dashboard-cotizador-theme {
-  --cot-bg-soft: linear-gradient(180deg, #145f68 0%, #0f5560 100%);
+  --cot-bg-soft: linear-gradient(135deg, var(--brand-strong) 0%, var(--brand-start) 42%, var(--brand-end) 100%);
   --cot-card-shadow: 0 16px 36px rgba(6, 38, 44, 0.34);
-  --cot-border: #4d8a93;
+  --cot-border: rgba(171, 231, 240, 0.35);
 }
 
 .dashboard-cotizador-theme .dashboard-panel {
@@ -82,14 +82,14 @@ h5 {
 
 .dashboard-cotizador-theme .dashboard-kpi-card {
   background:
-    linear-gradient(180deg, #176a73 0%, #135f68 100%);
-  border-color: #5b97a0;
+    linear-gradient(135deg, #165e73 0%, #1b7488 54%, #2fa3b8 100%);
+  border-color: rgba(171, 231, 240, 0.35);
   box-shadow: 0 12px 28px rgba(8, 40, 47, 0.32);
   color: #f8fffb;
 }
 
 .dashboard-cotizador-theme .decorazon-card {
-  border-color: #4d8a93;
+  border-color: rgba(171, 231, 240, 0.35);
 }
 
 .dashboard-cotizador-theme .text-slate-500,
@@ -105,13 +105,42 @@ h5 {
 }
 
 .dashboard-cotizador-theme .border-slate-200 {
-  border-color: #4d8a93 !important;
+  border-color: rgba(171, 231, 240, 0.35) !important;
 }
 
 .dashboard-cotizador-theme .bg-white {
-  background-color: rgba(17, 84, 93, 0.66) !important;
+  background-color: rgba(14, 86, 103, 0.66) !important;
 }
 
 .dashboard-cotizador-theme .bg-slate-100 {
   background-color: rgba(160, 218, 227, 0.16) !important;
+}
+
+.finance-theme .text-amber-700,
+.finance-theme .text-amber-800,
+.finance-theme .text-amber-900 {
+  color: var(--danger) !important;
+}
+
+.finance-theme .bg-amber-50,
+.finance-theme .bg-amber-100 {
+  background-color: rgba(238, 36, 99, 0.12) !important;
+}
+
+.finance-theme .border-amber-200,
+.finance-theme .border-amber-300 {
+  border-color: rgba(238, 36, 99, 0.38) !important;
+}
+
+.finance-theme .from-cyan-700 {
+  --tw-gradient-from: #155f7a var(--tw-gradient-from-position) !important;
+}
+
+.finance-theme .to-cyan-500,
+.finance-theme .to-sky-400 {
+  --tw-gradient-to: #34b0c6 var(--tw-gradient-to-position) !important;
+}
+
+.finance-theme .bg-cyan-700 {
+  background-color: #155f7a !important;
 }

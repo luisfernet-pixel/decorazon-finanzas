@@ -203,7 +203,11 @@ export default function DashboardPage() {
           </article>
           <article className="rounded-xl border border-slate-200 bg-white p-3">
             <p className="text-xs font-bold uppercase text-slate-500">Diferencia (app - banco)</p>
-            <p className={`mt-1 text-xl font-extrabold ${difference >= 0 ? "text-amber-700" : "text-rose-700"}`}>
+            <p
+              className={`mt-1 text-xl font-extrabold ${
+                hasBankBalance ? (difference >= 0 ? "text-cyan-100" : "text-rose-300") : "text-[#ee2463]"
+              }`}
+            >
               {hasBankBalance ? formatBs(difference) : "Ingresa tu saldo real"}
             </p>
           </article>
